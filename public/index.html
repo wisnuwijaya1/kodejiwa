@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+</head>
+<body>
+
+	<div class="container">
+		<div id="gambar"></div>
+	</div>
+
+	<style type="text/css">
+		.container {width: 500px; margin: auto; padding: 80px}
+		#gambar {width: 500px; margin:90px; padding: 140px}
+	</style>
+
+<script type="text/javascript">
+	var myImage = new Image(40, 40);
+	myImage.src = 'bs.png';
+	x = document.getElementById("gambar");
+	x.appendChild(myImage);	
+</script>
+
+<script type="text/javascript" src="loading-spinner.js"></script>
+<script type="text/javascript">
+'use strict';
+		Spinner();
+		Spinner.show();
+		setTimeout(function(){
+			Spinner.hide();
+			setTimeout(Spinner.show,5000);
+		},10000);
+</script>
+
+</body>
+</html>

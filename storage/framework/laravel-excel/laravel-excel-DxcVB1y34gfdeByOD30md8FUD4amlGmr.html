@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="9bGZf1lXXCZgXjuaeAxyrByIij1ylfIzOeJkfF0o">
+
+    <link rel="icon" type="image/png" href="bs2.png">
+
+    <title>Rekonsiliasi</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="http://192.168.10.15:8000/default/vendors/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="http://192.168.10.15:8000/default/vendors/animate.css/animate.min.css">
+    <link rel="stylesheet" href="http://192.168.10.15:8000/default/vendors/jquery-scrollbar/jquery.scrollbar.css">
+    <link rel="stylesheet" href="http://192.168.10.15:8000/default/vendors/fullcalendar/fullcalendar.min.css">
+    <link rel="stylesheet" href="http://192.168.10.15:8000/default/vendors/select2/css/select2.min.css">
+    <link rel="stylesheet" href="http://192.168.10.15:8000/default/vendors/dropzone/dropzone.css">
+    <link rel="stylesheet" href="http://192.168.10.15:8000/default/vendors/nouislider/nouislider.min.css">
+    <link rel="stylesheet" href="http://192.168.10.15:8000/default/vendors/trumbowyg/ui/trumbowyg.min.css">
+    <link rel="stylesheet" href="http://192.168.10.15:8000/default/vendors/flatpickr/flatpickr.min.css" />
+    <link rel="stylesheet" href="http://192.168.10.15:8000/default/vendors/rateyo/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="http://192.168.10.15:8000/default/vendors/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+    <link rel="stylesheet" href="http://192.168.10.15:8000/default/vendors/sweetalert2/sweetalert2.min.css">
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="http://192.168.10.15:8000/default/css/app.min.css">
+    <link rel="stylesheet" href="http://192.168.10.15:8000/css/added.css">
+      
+</head>
+
+<body data-ma-theme="blue" >
+
+    <main class="main">
+        <div class="page-loader">
+            <div class="page-loader__spinner">
+                <img src="http://192.168.10.15:8000/bs.png" class="spinner-img" >
+                <svg viewBox="25 25 50 50">
+                    <circle cx="50" cy="50" r="23" fill="none" stroke-width="4" stroke-miterlimit="1" />
+                </svg>
+            </div>
+        </div>
+
+        <script src="http://192.168.10.15:8000/default/vendors/jquery/jquery.min.js"></script>
+<header class="header" style="background-color: #ff8000;">
+
+    <div class="header__logo hidden-sm-dow text-center">
+        <img src="http://192.168.10.15:8000/Mahameru_Tulisan.png" class="logo-text" alt="">
+        
+    </div>
+
+    <div class="navigation-trigger" data-ma-action="aside-open" data-ma-target=".sidebar" style="margin-left: 2px;">
+        <div class="navigation-trigger__inner">
+            <i class="navigation-trigger__line"></i>
+            <i class="navigation-trigger__line"></i>
+            <i class="navigation-trigger__line"></i>
+        </div>
+    </div>
+
+    <ul class="top-nav">
+
+        <li class="dropdown hidden-xs-down">
+            <a href="#" data-toggle="dropdown"><i class="zmdi zmdi-apps"></i></a>
+
+            <div class="dropdown-menu dropdown-menu-right dropdown-menu--block" role="menu">
+                <div class="row app-shortcuts">
+                   <a class="col-4 app-shortcuts__item" href="http://192.168.10.15:8000/home">
+                    <i class="zmdi zmdi-home"></i>
+                    <small class="">Dashboard</small>
+                    <span class="app-shortcuts__helper bg-green"></span>
+                </a>
+                
+                <a class="col-4 app-shortcuts__item" href="#" href="http://192.168.10.15:8000/logout" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                    <i class="zmdi zmdi-power"></i>
+                    <small class="">Logout</small>
+                    <span class="app-shortcuts__helper bg-red"></span>
+                </a>
+                
+                <form id="logout-form" action="http://192.168.10.15:8000/logout" method="POST" style="display: none;">
+                    <input type="hidden" name="_token" value="9bGZf1lXXCZgXjuaeAxyrByIij1ylfIzOeJkfF0o">                </form>
+            </div>
+        </div>
+    </li>   
+</ul>
+</header>        <script src="http://192.168.10.15:8000/default/vendors/jquery/jquery.min.js"></script>
+
+<aside class="sidebar sidebar--hidden">
+    <div class="scrollbar-inner">
+        <div class="user">
+            <div class="user__info" data-toggle="dropdown">
+                <img class="user__img" src="http://192.168.10.15:8000/default/demo/img/profile-pics/8.jpg" alt="">
+                <div>
+                    <div class="user__name">admin       ( admin )</div>
+                    <div class="user__email">admin  </div>
+                </div>
+            </div>
+        </div>
+        
+        <ul class="navigation">
+            <li class="navigation__active">
+                <a href="http://192.168.10.15:8000/home" class="hover-text-blue" style="font-weight: bold;">
+                    <img src="http://192.168.10.15:8000/icons/png/001-homepage.png" class="sidebar-img" > Dashboard
+                </a>
+            </li>
+            
+                        <li class="navigation__sub">
+                <a href="#" class="hover-text-blue" style="font-weight: bold;">
+                    <img src="http://192.168.10.15:8000/icons/png/001-graph-bar.png" class="sidebar-img"> Rekon Regional 01
+                    <img src="http://192.168.10.15:8000/icons/png/003-arrow-down.png" class="sidebar-dd">
+                </a>
+                <ul>
+                    <div>
+                    <li>
+                        <a href="http://192.168.10.15:8000/banksumut" class="hover-text-blue">
+                            - Rekonsiliasi (Bank Sumut)
+                        </a>
+                    </li>
+                    </div>
+                </ul>
+
+            </li>
+            
+
+                        <li class="navigation__sub">
+                <a href="#" class="hover-text-blue" style="font-weight: bold;">
+                    <img src="http://192.168.10.15:8000/icons/png/001-graph-bar.png" class="sidebar-img"> Rekon Regional 02
+
+                    <img src="http://192.168.10.15:8000/icons/png/003-arrow-down.png" class="sidebar-dd">
+                </a>
+                <ul>
+                    <div>
+                    <li>
+                        <a href="http://192.168.10.15:8000/apipos" class="hover-text-blue">
+                            - Rekonsiliasi (Samsat Aceh)
+                        </a>
+                    </li>
+                    <br>
+                    <div>
+                    <li>
+                        <a href="http://192.168.10.15:8000/getpdam" class="hover-text-blue">
+                            - Rekonsiliasi (PDAM Pekanbaru)
+                        </a>
+                    </li>
+                    </div>
+                </ul>
+            </li>      
+            
+
+
+
+            
+            
+                    
+                    
+
+                    
+
+                   
+
+
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</aside>
+        
+
+        <div class="content content--full">
+            
+<div class="row">
+  <div class="col">
+    <header class="content__title">
+      
+      <h1>Data Rekon PDAM PekanBaru</h1>
+      <small>List</small>
+      <br>
+      <div  class="form-group row">
+                    <label for="awal" class="col-md-2 col-form-label-sm text-md-left">Tanggal</label>
+                    <div class="form-group">
+                      <input type="text" index="id" value="" class="undisplay">
+                    <input type="date" class="form-control"  id="tglbayar" name="tglbayar" value="2021-12-09">
+                    <div class="invalid-feedback">Please check again !</div>
+                    <i class="form-group__bar"></i>
+                    </div>
+      </header>   
+      </div>
+
+    <div class="col text-right nav-primary">
+        <button onclick="simpan('getpdam')" class="btn btn-danger btn-lg" style="margin-left: 75%; margin-top: 35px;">Mulai Rekon</button>
+        <a href="#" onclick="lpp()" class="btn btn-success btn-md" style="margin-left: 75%; margin-top: 10px; margin-right: 20px;"> LPP </a>
+    </div>
+      
+
+  
+</div>
+<div class="row">
+  <div class="col-6">
+    <div class="card">
+  <div class="card-body content-table">
+      <table id="example" class="table table-bordered table-striped-6">
+                </div>
+                <div  class="form-group row">
+
+                  <span style="float: right; margin-left: 40%; margin-top: -110px; ">
+                  <button onclick="load_data()" class="btn btn-success btn-sm">Filter</button>
+                </span>
+
+        <thead class="thead-default">
+          <tr>
+
+            <div class="card">
+          <div class="card-header">
+            <br>
+            <strong> <h2> <center> DATA MITRA PDAM PEKANBARU </center> </h2></strong>
+          </div>
+            <th width="40">No</th>
+            <th >Bill Number</th>
+            <th >Periode</th>            
+            <th >Total (RP)</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+          <div class="form-group row">
+                </div>
+                <div class="form-group row">
+            </div>
+        </tbody>
+      </table>
+  </div>
+</div>
+  </div>
+
+  <div class="col-6">
+    <div class="card">
+  <div class="card-body content-table">
+      <table id="example1" class="table table-bordered table-striped-6">
+
+        <div  class="form-group row">
+                    <div class="invalid-feedback">Please check again !</div>
+                    <i class="form-group__bar"></i>
+                    </div>
+
+                </div>
+
+                <div  class="form-group row">
+        <thead class="thead-default">
+          <tr>
+
+            <div class="card">
+          <div class="card-header">
+            <strong> <h2> <center> DATA POS </center> </h2></strong>
+          </div>
+            <th width="40">No</th>
+            <th >Bill Number</th>
+            <th >Periode</th>            
+            <th >Total (RP)</th>
+
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+          <div class="form-group row">
+                </div>
+                <div class="form-group row">
+
+            </div>
+        </tbody>
+      </table>
+  </div>
+</div>
+  </div>
+</div>
+
+    <div class="col text-right nav-primary">
+    <a href="#" onclick="beritaacara()" class="btn btn-success btn-sm a-btn-slide-text"> Berita Acara Sukses </a>
+    <a href="#" onclick="print1()" class="btn btn-primary btn-sm a-btn-slide-text"> SOPP-3A </a>
+    <a href="#" onclick="print()" class="btn btn-primary btn-sm a-btn-slide-text"> SOPP-3B </a>
+    <a href="#" onclick="excelsukses()" class="btn btn-sm btn-outline-success"> Excel </a>
+    <a href="#" onclick="pdfsukses()" class="btn btn-sm btn-outline-primary"> PDF </a>
+
+    </div>
+<br>
+<div class="col-12">
+    <div class="card">
+  <div class="card-body content-table">
+      <table id="example2" class="table table-bordered table-striped-6">
+
+        <div  class="form-group row">
+                    <div class="invalid-feedback">Please check again !</div>
+                    <i class="form-group__bar"></i>
+                    </div>
+
+                </div>
+
+                <div  class="form-group row">
+        <thead class="thead-default">
+          <tr>
+
+            <div class="card">
+          <div class="card-header">
+            <strong> <h2> <center> DATA POS & DATA MITRA SUKSES </center> </h2></strong>
+          </div>
+            <th width="40">No</th>
+            <th >Bill Number</th>
+            <th >Tanggal Bayar</th> 
+            <th >Nosi</th> 
+            <th >Nopen</th> 
+            <th >Kantor Bayar</th> 
+            <th >Nama</th> 
+            <th >Alamat</th>
+            <th >Tipe</th>    
+            <th >Reff</th>
+            <th >Periode</th> 
+            <th >Pemakaian</th> 
+            <th >Total Bayar (RP)</th>
+            <th >Bea Jaringan</th>             
+            <th >Total (RP)</th>
+            <th >Admin Pos</th>
+            <th >Fee Pos</th> 
+            <th >Total Admin (RP)</th>
+            <th >Tanggal Rekon</th>   
+
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+          <div class="form-group row">
+                </div>
+                <div class="form-group row">
+
+            </div>
+        </tbody>
+      </table>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="col text-right nav-primary">
+    <a href="#" onclick="beritaacara1()" class="btn btn-success btn-sm a-btn-slide-text"> Berita Acara Lebih Mitra </a>
+    <a href="#" onclick="sopp3alebihmitra()" class="btn btn-primary btn-sm a-btn-slide-text"> SOPP-3A </a>
+    <a href="#" onclick="sopp3blebihmitra()" class="btn btn-primary btn-sm a-btn-slide-text"> SOPP-3B </a>
+    <a href="#" onclick="excellebihmitra()" class="btn btn-sm btn-outline-success"> Excel </a>
+    <a href="#" onclick="pdflebihmitra()" class="btn btn-sm btn-outline-primary"> PDF </a>
+    </div>
+<br>
+<div class="col-12">
+    <div class="card">
+  <div class="card-body content-table">
+      <table id="example3" class="table table-bordered table-striped-6">
+
+        <div  class="form-group row">
+                    <div class="invalid-feedback">Please check again !</div>
+                    <i class="form-group__bar"></i>
+                    </div>
+
+                </div>
+
+                <div  class="form-group row">
+        <thead class="thead-default">
+          <tr>
+
+            <div class="card">
+          <div class="card-header">
+            <strong> <h2> <center> DATA LEBIH MITRA PDAM PEKANBARU </center> </h2></strong>
+          </div>
+            <th width="40">No</th>
+            <th >Bill Number</th>
+            <th >Periode</th>            
+            <th >Total (RP)</th>
+
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+          <div class="form-group row">
+                </div>
+                <div class="form-group row">
+
+            </div>
+        </tbody>
+      </table>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="col text-right nav-primary">
+    <a href="#" onclick="beritaacara2()" class="btn btn-success btn-sm a-btn-slide-text"> Berita Acara Lebih POS </a>
+    <a href="#" onclick="sopp3alebihpos()" class="btn btn-primary btn-sm a-btn-slide-text"> SOPP-3A </a>
+    <a href="#" onclick="sopp3blebihpos()" class="btn btn-primary btn-sm a-btn-slide-text"> SOPP-3B </a>
+    <a href="#" onclick="excellebihpos()" class="btn btn-sm btn-outline-success"> Excel </a>
+    <a href="#" onclick="pdflebihpos()" class="btn btn-sm btn-outline-primary"> PDF </a>
+    </div>
+<br>
+<div class="col-12">
+    <div class="card">
+  <div class="card-body content-table">
+      <table id="example4" class="table table-bordered table-striped-6">
+
+        <div  class="form-group row">
+                    <div class="invalid-feedback">Please check again !</div>
+                    <i class="form-group__bar"></i>
+                    </div>
+
+                </div>
+
+                <div  class="form-group row">
+        <thead class="thead-default">
+          <tr>
+
+            <div class="card">
+          <div class="card-header">
+            <strong> <h2> <center> DATA LEBIH POS </center> </h2></strong>
+          </div>
+            <th width="40">No</th>
+            <th >Bill Number</th>
+            <th >Periode</th>            
+            <th >Total (RP)</th>
+
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+          <div class="form-group row">
+                </div>
+                <div class="form-group row">
+
+            </div>
+        </tbody>
+      </table>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="col text-right nav-primary">
+    <a href="#" onclick="beritaacara3()" class="btn btn-success btn-sm a-btn-slide-text"> Berita Acara Double POS </a>
+    <a href="#" onclick="sopp3adoublepos()" class="btn btn-primary btn-sm a-btn-slide-text"> SOPP-3A </a>
+    <a href="#" onclick="sopp3bdoublepos()" class="btn btn-primary btn-sm a-btn-slide-text"> SOPP-3B </a>
+    <a href="#" onclick="exceldoublepos()" class="btn btn-sm btn-outline-success"> Excel </a>
+    <a href="#" onclick="pdfdoublepos()" class="btn btn-sm btn-outline-primary"> PDF </a>
+    </div>
+<br>
+<div class="col-12">
+    <div class="card">
+  <div class="card-body content-table">
+      <table id="example5" class="table table-bordered table-striped-6">
+
+        <div  class="form-group row">
+                    <div class="invalid-feedback">Please check again !</div>
+                    <i class="form-group__bar"></i>
+                    </div>
+
+                </div>
+
+                <div  class="form-group row">
+        <thead class="thead-default">
+          <tr>
+
+            <div class="card">
+          <div class="card-header">
+            <strong> <h2> <center> DATA DOUBLE POS </center> </h2></strong>
+          </div>
+            <th width="40">No</th>
+            <th >Bill Number</th>
+            <th >Periode</th>            
+            <th >Total (RP)</th>
+
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+          <div class="form-group row">
+                </div>
+                <div class="form-group row">
+
+            </div>
+        </tbody>
+      </table>
+  </div>
+</div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+ // load_data();
+
+});
+
+function load_data()
+ {
+
+//--Datatable Mitra PDAM
+  $('#example').DataTable().destroy();
+      tglbayar = $('#tglbayar').val();
+
+  $('#example').DataTable({
+      // dom: 'Blfrtip',
+      order:[[3, "asc"]],
+
+      createdRow: function( row, data, dataIndex ) {
+      },
+
+      processing: true,
+      serverSide: true,
+      responsive: true,
+
+      language: {
+        searchPlaceholder: 'Search...',
+        sSearch: '',
+        lengthMenu: '_MENU_ items/page',
+      },
+      ajax: {"url":'/getpdam/tampil_data/'+tglbayar,
+            "method":"POST",
+            "headers": {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}
+      },
+      aaSorting: [[1, 'asc']],
+      columns: [
+       {
+
+        "data": "billnumber",
+        render: function (data, type, row, meta) {
+            return meta.row + meta.settings._iDisplayStart + 1;
+        }},
+        
+
+        { data: 'billnumber', name: 'billnumber' },
+        { data: 'period', name: 'period' },
+        { data: 'total', name: 'total' ,render: $.fn.dataTable.render.number( '.', '.', 0, '' ) },
+
+      ],
+      });
+
+//--Datatable POS
+  $('#example1').DataTable().destroy();
+      tglbayar = $('#tglbayar').val();
+
+  $('#example1').DataTable({
+
+      // dom: 'Blfrtip',
+      // order:[[3, "asc"]],
+
+      createdRow: function( row, data, dataIndex ) {
+      },
+
+      
+      processing: true,
+      serverSide: true,
+      responsive: true,
+
+      language: {
+        searchPlaceholder: 'Search...',
+        sSearch: '',
+        lengthMenu: '_MENU_ items/page',
+      },
+      ajax: {"url":'/getpdam/tampil_data1/'+tglbayar,
+            "method":"POST",
+            "headers": {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}
+      },
+      // aaSorting: [[1, 'asc']],
+      columns: [
+
+       {
+        "data": "billnumber",
+        render: function (data, type, row, meta) {
+            return meta.row + meta.settings._iDisplayStart + 1;
+        }},
+
+        // { data: 'IdTransaksi', render: renderBill },
+        { data: '7', name: 'bill', },
+        { data: '0', name: 'period', },
+        { data: '4', name: 'total' ,render: $.fn.dataTable.render.number( '.', '.', 0, '' ) },
+
+      ],
+      });
+
+//--Datatable Mitra Sukses
+       $('#example2').DataTable().destroy();
+      tglbayar = $('#tglbayar').val();
+
+
+    $('#example2').DataTable({
+
+      'columnDefs' : [
+        //hide the second & fourth column
+        { 'visible': false, 'targets': [2,3,4,5,6,7,8,9,11,12,13,15,16,17,18] }
+    ],
+      dom: 'Blfrtip',
+
+
+      createdRow: function( row, data, dataIndex ) {
+      },
+   
+      processing: true,
+      serverSide: true,
+      responsive: true,
+
+      language: {
+        searchPlaceholder: 'Search...',
+        sSearch: '',
+        lengthMenu: '_MENU_ items/page',
+
+      },
+      ajax: {"url":'/getpdam/tampil_data2/'+tglbayar,
+            "method":"POST",
+            "headers": {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}
+      },
+      // aaSorting: [[1, 'asc']],
+
+      columns: [
+
+
+       {
+        "data": "billnumber",
+        render: function (data, type, row, meta) {
+            return meta.row + meta.settings._iDisplayStart + 1;
+        }},
+
+        { data: 'bill', name: 'bill' },
+        { data: 'tglbayar', name: 'tglbayar' },
+        { data: 'nosi', name: 'nosi' },
+        { data: 'nopen', name: 'nopen' },
+        { data: 'kantorbayar', name: 'kantorbayar' },
+        { data: 'nama', name: 'nama' },
+        { data: 'alamat', name: 'alamat' },
+        { data: 'tipe', name: 'tipe' },
+        { data: 'reff', name: 'reff' },
+        { data: 'period', name: 'period' },
+        { data: 'pemakaian', name: 'pemakaian' },
+        { data: 'totalbayar', name: 'totalbayar' },
+        { data: 'beajaringan', name: 'beajaringan' },
+        { data: 'total', name: 'total' ,render: $.fn.dataTable.render.number( ',', ',', 0, '' ) },
+        { data: 'adminpos', name: 'adminpos' },
+        { data: 'feepos', name: 'feepos' },
+        { data: 'totaladm', name: 'totaladm' ,render: $.fn.dataTable.render.number( ',', ',', 0, '' ) },
+        { data: 'tglrekon', name: 'tglrekon' },
+
+      ],
+      });
+
+
+//--Datatable Lebih Mitra
+  $('#example3').DataTable().destroy();
+      tglbayar = $('#tglbayar').val();
+
+  $('#example3').DataTable({
+
+      // dom: 'Blfrtip',
+      // order:[[3, "asc"]],
+
+      createdRow: function( row, data, dataIndex ) {
+      },
+
+      
+      processing: true,
+      serverSide: true,
+      responsive: true,
+
+      language: {
+        searchPlaceholder: 'Search...',
+        sSearch: '',
+        lengthMenu: '_MENU_ items/page',
+      },
+      ajax: {"url":'/getpdam/tampil_data3/'+tglbayar,
+            "method":"POST",
+            "headers": {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}
+      },
+      // aaSorting: [[1, 'asc']],
+      columns: [
+
+       {
+        "data": "billnumber",
+        render: function (data, type, row, meta) {
+            return meta.row + meta.settings._iDisplayStart + 1;
+        }},
+
+        // { data: 'IdTransaksi', render: renderBill },
+        { data: 'bill', name: 'bill' },
+        { data: 'period', name: 'period' },
+        { data: 'total', name: 'total' ,render: $.fn.dataTable.render.number( ',', ',', 0, '' ) },
+
+      ],
+      });
+
+//--Datatable Lebih POS
+  $('#example4').DataTable().destroy();
+      tglbayar = $('#tglbayar').val();
+
+  $('#example4').DataTable({
+
+      // dom: 'Blfrtip',
+      // order:[[3, "asc"]],
+
+      createdRow: function( row, data, dataIndex ) {
+      },
+
+      
+      processing: true,
+      serverSide: true,
+      responsive: true,
+
+      language: {
+        searchPlaceholder: 'Search...',
+        sSearch: '',
+        lengthMenu: '_MENU_ items/page',
+      },
+      ajax: {"url":'/getpdam/tampil_data4/'+tglbayar,
+            "method":"POST",
+            "headers": {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}
+      },
+      // aaSorting: [[1, 'asc']],
+      columns: [
+
+       {
+        "data": "billnumber",
+        render: function (data, type, row, meta) {
+            return meta.row + meta.settings._iDisplayStart + 1;
+        }},
+
+        // { data: 'IdTransaksi', render: renderBill },
+        { data: 'bill', name: 'bill' },
+        { data: 'periode', name: 'periode' },
+        { data: 'total', name: 'total' ,render: $.fn.dataTable.render.number( '.', '.', 0, '' ) },
+
+      ],
+      });
+
+//--Datatable Double POS
+  $('#example5').DataTable().destroy();
+      tglbayar = $('#tglbayar').val();
+
+  $('#example5').DataTable({
+
+      // dom: 'Blfrtip',
+      // order:[[3, "asc"]],
+
+      createdRow: function( row, data, dataIndex ) {
+      },
+
+      
+      processing: true,
+      serverSide: true,
+      responsive: true,
+
+      language: {
+        searchPlaceholder: 'Search...',
+        sSearch: '',
+        lengthMenu: '_MENU_ items/page',
+
+      },
+      ajax: {"url":'/getpdam/tampil_data5/'+tglbayar,
+            "method":"POST",
+            "headers": {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}
+      },
+      // aaSorting: [[1, 'asc']],
+      columns: [
+
+       {
+        "data": "billnumber",
+        render: function (data, type, row, meta) {
+            return meta.row + meta.settings._iDisplayStart + 1;
+        }},
+
+        // { data: 'IdTransaksi', render: renderBill },
+        { data: 'bill', name: 'bill' },
+        { data: 'periode', name: 'periode' },
+        { data: 'total', name: 'total' ,render: $.fn.dataTable.render.number( '.', '.', 0, '' ) },
+
+      ],
+      });
+}
+
+//--PROSES SIMPAN REKON
+function simpan()
+ {
+
+          var tanya = confirm("Apakah Anda Akan Merekon Data Ini ?");
+ 
+         if(tanya === true) {
+            pesan = "Ya";
+            $("#simpan").submit();
+            
+         }else{
+            pesan = "Tidak";
+            pesan.preventDefault();
+         }
+            
+
+
+  $('#example2').DataTable().destroy();
+      tglbayar = $('#tglbayar').val();
+
+
+      // console.log(tglbayar);
+
+  $('#example2').DataTable({
+
+    'columnDefs' : [
+        //hide the second & fourth column
+        { 'visible': false, 'targets': [2,3,4,5,6,7,8,9,11,12,13,15,16,17,18] }
+    ],
+
+      dom: 'Blfrtip',
+      // order:[[3, "asc"]],
+
+      createdRow: function( row, data, dataIndex ) {
+      },
+
+      
+      processing: true,
+      serverSide: true,
+      responsive: true,
+
+      language: {
+        searchPlaceholder: 'Search...',
+        sSearch: '',
+        lengthMenu: '_MENU_ items/page',
+      },
+      ajax: {"url":'/getpdam/store/'+tglbayar,
+            "method":"POST",
+            "headers": {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}
+      },
+      // aaSorting: [[1, 'asc']],
+
+      columns: [
+
+       {
+        "data": "billnumber",
+        render: function (data, type, row, meta) {
+            return meta.row + meta.settings._iDisplayStart + 1;
+        }},
+
+        { data: 'bill', name: 'bill' },
+        { data: 'tglbayar', name: 'tglbayar' },
+        { data: 'nosi', name: 'nosi' },
+        { data: 'nopen', name: 'nopen' },
+        { data: 'kantorbayar', name: 'kantorbayar' },
+        { data: 'nama', name: 'nama' },
+        { data: 'alamat', name: 'alamat' },
+        { data: 'tipe', name: 'tipe' },
+        { data: 'reff', name: 'reff' },
+        { data: 'period', name: 'period' },
+        { data: 'pemakaian', name: 'pemakaian' },
+        { data: 'totalbayar', name: 'totalbayar' },
+        { data: 'beajaringan', name: 'beajaringan' },
+        { data: 'total', name: 'total' ,render: $.fn.dataTable.render.number( ',', ',', 0, '' ) },
+        { data: 'adminpos', name: 'adminpos' },
+        { data: 'feepos', name: 'feepos' },
+        { data: 'totaladm', name: 'totaladm' ,render: $.fn.dataTable.render.number( ',', ',', 0, '' ) },
+        { data: 'tglrekon', name: 'tglrekon' },
+
+
+      ],
+      });
+
+}
+
+
+
+//--PRINT REKON SUKSES
+    function print(url,data,meta,row)
+    {
+      
+      tglbayar = $('#tglbayar').val();
+      var html = 'getpdam/printdata/'+tglbayar+''
+
+      return window.open(html);
+     
+    }
+
+    function print1(url,data,meta,row)
+    {
+      
+      tglbayar = $('#tglbayar').val();
+      var html = 'getpdam/printdata1/'+tglbayar+''
+
+      return window.open(html);
+     
+    }
+
+    function sopp3alebihmitra(url,data,meta,row)
+    {
+      
+      tglbayar = $('#tglbayar').val();
+      var html = 'getpdam/sopp3alebihmitra/'+tglbayar+''
+
+      return window.open(html);
+     
+    }
+
+    function sopp3blebihmitra(url,data,meta,row)
+    {
+      
+      tglbayar = $('#tglbayar').val();
+      var html = 'getpdam/sopp3blebihmitra/'+tglbayar+''
+
+      return window.open(html);
+     
+    }
+
+
+    function sopp3alebihpos(url,data,meta,row)
+    {
+      
+      tglbayar = $('#tglbayar').val();
+      var html = 'getpdam/sopp3alebihpos/'+tglbayar+''
+
+      return window.open(html);
+     
+    }
+
+    function sopp3blebihpos(url,data,meta,row)
+    {
+      
+      tglbayar = $('#tglbayar').val();
+      var html = 'getpdam/sopp3blebihpos/'+tglbayar+''
+
+      return window.open(html);
+     
+    }
+
+
+
+    function beritaacara(url,data,meta,row)
+    {
+      
+      tglbayar = $('#tglbayar').val();
+      var html = 'getpdam/beritaacara/'+tglbayar+''
+
+      return window.open(html);
+
+     
+    }
+
+    function beritaacara1(url,data,meta,row)
+    {
+      
+      tglbayar = $('#tglbayar').val();
+      var html = 'getpdam/beritaacara1/'+tglbayar+''
+
+      return window.open(html);
+
+     
+    }   
+
+
+    function beritaacara2(url,data,meta,row)
+    {
+      
+      tglbayar = $('#tglbayar').val();
+      var html = 'getpdam/beritaacara2/'+tglbayar+''
+
+      return window.open(html);
+
+     
+    }  
+
+
+    function beritaacara3(url,data,meta,row)
+    {
+      
+      tglbayar = $('#tglbayar').val();
+      var html = 'getpdam/beritaacara3/'+tglbayar+''
+
+      return window.open(html);
+
+     
+    } 
+
+
+    function sopp3adoublepos(url,data,meta,row)
+    {
+      
+      tglbayar = $('#tglbayar').val();
+      var html = 'getpdam/sopp3adoublepos/'+tglbayar+''
+
+      return window.open(html);
+     
+    }
+
+    function sopp3bdoublepos(url,data,meta,row)
+    {
+      
+      tglbayar = $('#tglbayar').val();
+      var html = 'getpdam/sopp3bdoublepos/'+tglbayar+''
+
+      return window.open(html);
+     
+    }
+
+    function lpp(url,data,meta,row)
+    {
+      
+      tglbayar = $('#tglbayar').val();
+      var html = 'getpdam/lpp/'+tglbayar+''
+
+      return window.open(html);
+     
+    }
+
+    function excelsukses(url,data,meta,row)
+    {
+      
+      tglbayar = $('#tglbayar').val();
+      var html = 'getpdam/excelsukses/'+tglbayar+''
+
+      return window.open(html);
+     
+    }
+
+
+    function pdfsukses(url,data,meta,row)
+    {
+      
+      tglbayar = $('#tglbayar').val();
+      var html = 'getpdam/pdfsukses/'+tglbayar+''
+
+      return window.open(html);
+     
+    }
+
+    function excellebihmitra(url,data,meta,row)
+    {
+      
+      tglbayar = $('#tglbayar').val();
+      var html = 'getpdam/excellebihmitra/'+tglbayar+''
+
+      return window.open(html);
+     
+    }
+
+
+    function pdflebihmitra(url,data,meta,row)
+    {
+      
+      tglbayar = $('#tglbayar').val();
+      var html = 'getpdam/pdflebihmitra/'+tglbayar+''
+
+      return window.open(html);
+     
+    }
+
+    function excellebihpos(url,data,meta,row)
+    {
+      
+      tglbayar = $('#tglbayar').val();
+      var html = 'getpdam/excellebihpos/'+tglbayar+''
+
+      return window.open(html);
+     
+    }
+
+
+    function pdflebihpos(url,data,meta,row)
+    {
+      
+      tglbayar = $('#tglbayar').val();
+      var html = 'getpdam/pdflebihpos/'+tglbayar+''
+
+      return window.open(html);
+     
+    }
+
+    function exceldoublepos(url,data,meta,row)
+    {
+      
+      tglbayar = $('#tglbayar').val();
+      var html = 'getpdam/exceldoublepos/'+tglbayar+''
+
+      return window.open(html);
+     
+    }
+
+
+    function pdfdoublepos(url,data,meta,row)
+    {
+      
+      tglbayar = $('#tglbayar').val();
+      var html = 'getpdam/pdfdoublepos/'+tglbayar+''
+
+      return window.open(html);
+     
+    }
+
+
+
+
+        
+
+</script>
+
+
+<footer class="bg-light py-5">
+  <div class="container">
+    <div class="large text-center text-muted">
+      Copyright &copy;
+      <script>
+        document.write(new Date().getFullYear());
+
+
+      </script>
+      - Wisnu Wijaya (wisnuwijaya1609@gmail.com). All rights reserved.
+    </div>
+  </div>
+</footer>        </div>
+    </main>
+
+    <!-- <script src="http://192.168.10.15:8000/default/vendors/jquery/jquery.min.js"></script> -->
+    <script src="http://192.168.10.15:8000/default/vendors/popper.js/popper.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/jquery-scrollLock/jquery-scrollLock.min.js"></script>
+
+    <script src="http://192.168.10.15:8000/default/vendors/flot/jquery.flot.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/flot/jquery.flot.resize.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/flot.curvedlines/curvedLines.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/jqvmap/jquery.vmap.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/jqvmap/maps/jquery.vmap.world.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/easy-pie-chart/jquery.easypiechart.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/salvattore/salvattore.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/sparkline/jquery.sparkline.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/moment/moment.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/fullcalendar/fullcalendar.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/flot.orderbars/jquery.flot.orderBars.js"></script>
+
+    <script src="http://192.168.10.15:8000/default/vendors/bootstrap-notify/bootstrap-notify.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/sweetalert2/sweetalert2.min.js"></script>
+
+    <script src="http://192.168.10.15:8000/default/vendors/jquery-mask-plugin/jquery.mask.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/select2/js/select2.full.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/dropzone/dropzone.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/moment/moment.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/nouislider/nouislider.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/trumbowyg/trumbowyg.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/flatpickr/flatpickr.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/rateyo/jquery.rateyo.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/jquery-text-counter/textcounter.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/autosize/autosize.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/datatables/jquery.dataTables.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/datatables-buttons/dataTables.buttons.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/datatables-buttons/buttons.print.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/jszip/jszip.min.js"></script>
+    <script src="http://192.168.10.15:8000/default/vendors/datatables-buttons/buttons.html5.min.js"></script>
+    <script src="http://192.168.10.15:8000/js/datatablecolvisbutton.js"></script>
+    <script src="http://192.168.10.15:8000/js/charts/chart.min.js"></script>
+
+    <!-- App functions and actions -->
+    <script src="http://192.168.10.15:8000/default/js/app.min.js"></script>
+    
+    
+    <script src="http://192.168.10.15:8000/js/getcoordinate.js"></script>
+    <script src="http://192.168.10.15:8000/js/customdatatable.js"></script>
+    <script src="http://192.168.10.15:8000/js/customdatatable2.js"></script>
+    <script src="http://192.168.10.15:8000/js/proses.js"></script>
+    <script src="http://192.168.10.15:8000/js/customnotif.js"></script>
+    <script src="http://192.168.10.15:8000/js/showdetail.js"></script>
+
+    
+</body>
+
+</html>

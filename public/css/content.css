@@ -1,0 +1,609 @@
+/*landing page 1*/
+:root {
+  --dl-color-gray-500: #595959;
+  --dl-color-gray-700: #999999;
+  --dl-color-gray-900: #D9D9D9;
+  --dl-size-size-large: 144px;
+  --dl-size-size-small: 48px;
+  --dl-color-danger-300: #A22020;
+  --dl-color-danger-500: #BF2626;
+  --dl-color-danger-700: #E14747;
+  --dl-color-gray-black: #000000;
+  --dl-color-gray-white: #FFFFFF;
+  --dl-size-size-medium: 96px;
+  --dl-size-size-xlarge: 192px;
+  --dl-size-size-xsmall: 16px;
+  --dl-space-space-unit: 16px;
+  --dl-color-primary-100: #003EB3;
+  --dl-color-primary-300: #0074F0;
+  --dl-color-primary-500: #14A9FF;
+  --dl-color-primary-700: #85DCFF;
+  --dl-color-success-300: #199033;
+  --dl-color-success-500: #32A94C;
+  --dl-color-success-700: #4CC366;
+  --dl-size-size-xxlarge: 288px;
+  --dl-color-gray-900text: rgba(30, 30, 30, 1);
+  --dl-size-size-maxwidth: 1400px;
+  --dl-color-default-white: rgba(255, 255, 255, 1);
+  --dl-radius-radius-round: 50%;
+  --dl-color-default-basebg: rgba(243, 243, 243, 1);
+  --dl-color-default-orange: rgba(255, 105, 0, 1);
+  --dl-color-default-purple: rgba(114, 36, 108, 1);
+  --dl-space-space-halfunit: 8px;
+  --dl-space-space-sixunits: 96px;
+  --dl-space-space-twounits: 32px;
+  --dl-color-default-greyout: rgba(172, 172, 172, 1);
+  --dl-color-default-neutral: rgba(75, 75, 75, 1);
+  --dl-radius-radius-radius2: 2px;
+  --dl-radius-radius-radius4: 4px;
+  --dl-radius-radius-radius8: 8px;
+  --dl-space-space-fiveunits: 80px;
+  --dl-space-space-fourunits: 64px;
+  --dl-color-default-softblue: rgba(228, 241, 255, 1);
+  --dl-space-space-threeunits: 48px;
+  --dl-color-default-trasparent: rgba(255, 255, 255, 0.00009999999747378752);
+  --dl-color-default-unselected: rgba(198, 198, 198, 1);
+  --dl-color-default-gradientcta: rgba(255, 105, 0, 1);
+  --dl-color-default-selectedcolor: rgba(25, 123, 189, 1);
+  --dl-space-space-oneandhalfunits: 24px;
+  --dl-color-default-gradientpospay: rgba(114, 36, 108, 1);
+  --dl-color-default-gradientpospay2: rgba(255, 105, 0, 1);
+}
+.button {
+  color: var(--dl-color-gray-black);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.input {
+  color: var(--dl-color-gray-black);
+  cursor: auto;
+  padding: 0.5rem 1rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.textarea {
+  color: var(--dl-color-gray-black);
+  cursor: auto;
+  padding: 0.5rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.list {
+  width: 100%;
+  margin: 1em 0px 1em 0px;
+  display: block;
+  padding: 0px 0px 0px 1.5rem;
+  list-style-type: none;
+  list-style-position: outside;
+}
+.list-item {
+  display: list-item;
+}
+.teleport-show {
+  display: flex !important;
+}
+.paragraphLead {
+  font-size: 20px;
+  font-style: normal;
+  font-family: Open Sans;
+  font-weight: 400px;
+  font-stretch: normal;
+}
+.buttonLarge {
+  font-size: 16px;
+  font-style: normal;
+  font-family: Montserrat;
+  font-weight: 600px;
+  font-stretch: normal;
+}
+.content {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+  background-color: #081c1d;
+}
+
+.landing-page-pospay-komunitas-container {
+  min-height: 100vh;
+}
+.landing-page-pospay-komunitas-landing-page-pospay-komunitas {
+  width: 100%;
+  height: 589px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 0px 0px 0px 0px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.landing-page-pospay-komunitas-snippets-heroes01 {
+  width: 100%;
+  height: 589px;
+
+ 
+}
+
+
+.landing-page-pospay-komunitas-content {
+
+
+}
+.landing-page-pospay-komunitas-mockup-landing-page2 {
+  top: 79px;
+  left: 50%;
+  width: 531px;
+  height: 442px;
+  position: absolute;
+  
+
+}
+.landing-page-pospay-komunitas-left {
+  top: 79.12023162841797px;
+  left: 10%;
+  width: 475px;
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: column;
+}
+.landing-page-pospay-komunitas-text {
+  width: 475px;
+  height: auto;
+  font-size: 48px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 76px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 40px;
+  text-decoration: none;
+}
+.landing-page-pospay-komunitas-text2 {
+  width: 445px;
+  height: auto;
+  align-self: auto;
+  text-align: left;
+  line-height: 40px;
+  margin-right: 0;
+  margin-bottom: 40px;
+}
+.landing-page-pospay-komunitas-buttons {
+  width: 295px;
+  height: 48px;
+  display: flex;
+  padding: 0;
+  position: relative;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.landing-page-pospay-komunitas-frame2 {
+  top: 0px;
+  left: 0px;
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  align-items: flex-start;
+  border-color: transparent;
+  border-radius: 0px 0px 0px 0px;
+}
+.landing-page-pospay-komunitas-button-large1primary {
+  display: flex;
+  padding: 17px 24px;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  border-color: transparent;
+  margin-right: 20px;
+  border-radius: 10px;
+  margin-bottom: 0;
+  margin-left: 10px;
+  background-color: var(--dl-color-default-gradientcta);
+  background-image: linear-gradient(200deg, rgba(255, 105, 0, 1) 0%, rgba(114, 36, 108, 1) 100%);
+}
+.landing-page-pospay-komunitas-text4 {
+  color: var(--dl-color-default-white);
+  height: auto;
+  align-self: auto;
+  text-align: center;
+  line-height: 14px;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.landing-page-pospay-komunitas-button-large-link {
+  display: flex;
+  padding: 17px 0;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+}
+.landing-page-pospay-komunitas-icon {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  box-sizing: border-box;
+  margin-right: 0;
+  margin-bottom: 0;
+  background-repeat: no-repeat;
+  position: fixed;
+  text-align: center;
+}
+
+
+/*landing hubungi*/
+.snippets-features-blocks01-container {
+  min-height: 100vh;
+}
+.snippets-features-blocks01-snippets-features-blocks01 {
+  width: 100%;
+  height: 544px;
+  display: flex;
+  padding: 60px 405px;
+  position: relative;
+  max-width: 1920px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  border-color: rgba(150, 150, 150, 1);
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0px;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+}
+.snippets-features-blocks01-kantor-pusat {
+  width: 1110px;
+  display: flex;
+  padding: 3px 0;
+  position: relative;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 40px;
+  flex-direction: column;
+}
+.snippets-features-blocks01-text {
+  width: 277px;
+  height: auto;
+  font-size: 26px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: justified;
+  font-family: Open Sans;
+  font-weight: 700;
+  line-height: 40px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 4px;
+  text-decoration: none;
+}
+.snippets-features-blocks01-text02 {
+  width: 277px;
+  height: auto;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: justified;
+  font-family: Open Sans;
+  font-weight: 400;
+  line-height: 40px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 4px;
+  text-decoration: none;
+}
+.snippets-features-blocks01-column05 {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: flex-start;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: column;
+}
+.snippets-features-blocks01-frame76 {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 2px;
+}
+.snippets-features-blocks01-clarityphonehandsetline {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  box-sizing: border-box;
+  margin-right: 16px;
+  margin-bottom: 0;
+}
+.snippets-features-blocks01-text07 {
+  width: 135px;
+  height: auto;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Open Sans;
+  font-weight: 400;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.snippets-features-blocks01-frame77 {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+}
+.snippets-features-blocks01-mdiweb {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  box-sizing: border-box;
+  margin-right: 16px;
+  margin-bottom: 0;
+}
+.snippets-features-blocks01-text09 {
+  height: auto;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Open Sans;
+  font-weight: 400;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.snippets-features-blocks01-kantor-pusat1 {
+  width: 1110px;
+  display: flex;
+  padding: 3px 0;
+  position: relative;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: column;
+}
+.snippets-features-blocks01-text11 {
+  width: 277px;
+  height: auto;
+  font-size: 26px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: justified;
+  font-family: Open Sans;
+  font-weight: 700;
+  line-height: 40px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 4px;
+  text-decoration: none;
+}
+.snippets-features-blocks01-column051 {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: flex-start;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: column;
+}
+.snippets-features-blocks01-frame761 {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 2px;
+}
+.snippets-features-blocks01-iconstablerfacebook {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 16px;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  background-color: var(--dl-color-default-trasparent);
+}
+.snippets-features-blocks01-path {
+  top: 0px;
+  left: 3.75px;
+  width: 13px;
+  height: 20px;
+  position: absolute;
+  box-sizing: border-box;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.snippets-features-blocks01-text13 {
+  height: auto;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Open Sans;
+  font-weight: 400;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+.snippets-features-blocks01-frame771 {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 2px;
+}
+.snippets-features-blocks01-lucidetwitter {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  box-sizing: border-box;
+  margin-right: 16px;
+  margin-bottom: 0;
+}
+.snippets-features-blocks01-text15 {
+  height: auto;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Open Sans;
+  font-weight: 400;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+.snippets-features-blocks01-frame79 {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 2px;
+}
+.snippets-features-blocks01-iconstablerinstagram {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 16px;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  background-color: var(--dl-color-default-trasparent);
+}
+.snippets-features-blocks01-color {
+  top: 0px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  box-sizing: border-box;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.snippets-features-blocks01-text17 {
+  height: auto;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Open Sans;
+  font-weight: 400;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+.snippets-features-blocks01-frame78 {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+}
+.snippets-features-blocks01-antdesignlinkedinoutlined {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  box-sizing: border-box;
+  margin-right: 16px;
+  margin-bottom: 0;
+}
+.snippets-features-blocks01-text19 {
+  height: auto;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Open Sans;
+  font-weight: 400;
+  line-height: 32px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: underline;
+}

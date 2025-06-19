@@ -1,0 +1,2 @@
+PHP Version 7.4.16
+Laravel Framework 8.59.0
