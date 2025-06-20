@@ -4,7 +4,7 @@
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
                 <a href="{{route('dashboardawal')}}" class="header__logo hidden-sm-dow text-center">
-        <img src="{{asset('Kode Jiwa - Logo.png')}}" width="100" height="75">   
+        <img src="{{asset('Kode Jiwa - Logo.png')}}" width="125" height="90">   
     </a>
 
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" id="collapse" data-bs-target="#navbarResponsive" >

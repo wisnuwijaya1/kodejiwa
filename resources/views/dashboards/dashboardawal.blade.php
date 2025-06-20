@@ -22,7 +22,7 @@
         text-transform: none;
         letter-spacing: normal;
         line-height: 1.15;
-        background-color: #081c1d;
+        background-color: #23342B;
 
       }
     </style>
@@ -153,30 +153,49 @@ KodeJiwa hadir sebagai teman. Kami percaya, perubahan tak selalu butuh nasihat b
                     <div class="col-lg-6">
                         <!-- Mashead text and app badges-->
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                            <h1 style="font-family: Montserrat; color: #fefbdc" >Ruang Lingkup Kode Jiwa</h1>
+                            <h2 style="font-family: Montserrat; color: #fefbdc" >🔹 Apa yang Akan Kamu Dapat?</h2>
                             <br>
-                            <p class="lead fw-normal mb-5" style="font-size: 20px; line-height: 25px; color: #fefbdc">Ruang lingkup Kode Jiwa ditinjau dari cakupan
-                        pengguna/anggota dapat dikategorikan sebagai komunitas
-                        Nasional atau Regional (Propinsi / Kabupaten/Kota).
-                        <br>
-                        Untuk Ruang lingkup yang bersifat Nasional / Regional
-                        Propinsi secara sistem dapat memiliki sub kepengurusan
-                        organisasi ditingkat rayon.</p>
+                            <p style="font-size: 15px; line-height: 25px; color: #fefbdc">
+                              Gunakan visual kotak 3 bagian:
+                            </p>
+                            <p  style="font-size: 15px; line-height: px; color: #fefbdc">
+                              1.	Gaya Berkomunikasi:
+                            </p>
+                            <p  style="font-size: 15px; line-height: 25px; color: #fefbdc">
+                              Apakah kamu cenderung to the point, pendengar yang kuat, atau penggerak kelompok?
+                            </p>
+                            <p  style="font-size: 15px; line-height: px; color: #fefbdc">
+                              2.	Respons Saat Tertekan:
+                            </p>
+                            <p  style="font-size: 15px; line-height: 25px; color: #fefbdc">
+                              Apakah kamu melawan, mundur, memendam, atau malah menjadi sangat aktif?
+                            </p>
+                            <p  style="font-size: 15px; line-height: px; color: #fefbdc">
+                              3.	Kebutuhan Batin Tersembunyi:
+                            </p>
+                            <p  style="font-size: 15px; line-height: 25px; color: #fefbdc">
+                              Setiap profil punya kebutuhan dasar yang sering tidak disadari.
+                            </p>
                             
                         </div>
                     </div>
                    <div class="col-lg-6">
                         <!-- Mashead text and app badges-->
-                        <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                            <h1 style="font-family: Montserrat; color: #fefbdc" >Scope Keanggotaan Kode Jiwa</h1>
+                        <div class="mb-5 mb-lg-0 text-center text-lg-start" style="margin-top: -90px;">
+                            <h2 style="font-family: Montserrat; color: #fefbdc" >🔹 Proses</h2>
                             <br>
-                            <p class="lead fw-normal  mb-5" style="font-size: 20px; line-height: 25px; color: #fefbdc">Ruang lingkup keanggotaan Kode Jiwa akan berpengaruh
-                        terhadap keanggotaan organisasinya dan akan tergambar
-                        dalam fungsi aplikasi.
-                        <br>
-                        Secara mendasar Kode Jiwa akan memiliki seorang ketua,
-                        bendahara dan Administrator sebagai delegasi dari
-                        kewenangan ketua Kode Jiwa.</p>
+                             <p  style="font-size: 15px; line-height: px; color: #fefbdc">
+                              1.	Jawab pertanyaan pilihan ganda (santai, 5–7 menit).
+                            </p>
+                             <p  style="font-size: 15px; line-height: px; color: #fefbdc">
+                              2.	Sistem menyusun ringkasan profil kepribadianmu.
+                            </p>
+                             <p  style="font-size: 15px; line-height: px; color: #fefbdc">
+                              3.	Kamu akan melihat insight tentang kekuatan, tantangan, dan tips keseimbangan.
+                            </p>
+                             <p  style="font-size: 15px; line-height: px; color: #fefbdc">
+                              4.	Bisa lanjut ke eksplorasi emosional lewat pendekatan psikologi modern.
+                            </p>
                            
                         </div>
                 </div>

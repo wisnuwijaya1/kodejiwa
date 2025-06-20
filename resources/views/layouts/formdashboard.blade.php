@@ -1,6 +1,8 @@
+
+
 <div class="modal fade" id="create-new-modal" data-backdrop="static">
 	<div class="modal-dialog">
-		<div class="modal-content">
+		<div class="modal-content text-white" style="background-color: #23342B;">
 			<div class="modal-header">
 				<h5 class="modal-title pull-left">Form Registrasi Data Diri</h5>
 			</div>
@@ -11,13 +13,13 @@
 
 				<div class="form-group">
 					<label>Nama Lengkap</label>
-					<input type="text" class="form-control" name="name" default="" value="{{ old('name') }}" required>
+					<input type="text" class="form-control" name="name" default="" placeholder="John Doe" value="{{ old('name') }}" required>
 					<div class="invalid-feedback text-danger"></div>
 					<i class="form-group__bar"></i>
 				</div>
 				<div class="form-group">
 					<label>Tanggal Lahir</label>
-					<input type="date" class="form-control" name="tanggal" default="" value="{{ old('tanggal') }}" required>
+					<input type="date" class="form-control" name="tanggal"  placeholder="10-10-2000" default="" value="{{ old('tanggal') }}" required>
 					<div class="invalid-feedback text-danger"></div>
 					<i class="form-group__bar"></i>
 				</div>
@@ -26,7 +28,7 @@
 					@error('email')
 						<div class="text-danger">{{ $message }}</div>
 					@enderror
-					<input type="email" class="form-control" name="email" default="" value="{{ old('email') }}" required>
+					<input type="email" class="form-control" name="email" default="" placeholder="johndoe@gmail.com" value="{{ old('email') }}" required>
 					<div class="invalid-feedback text-danger"></div>
 					<i class="form-group__bar"></i>
 				</div>
@@ -102,6 +104,10 @@
     });
 	
 </script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
 
 <script language="javascript" type="text/javascript">
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

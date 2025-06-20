@@ -638,7 +638,7 @@ progress {
  
   margin-right: auto;
   margin-left: auto;
-  background-color: #081c1d;
+  background-color: #23342B;
 }
 
 @media (min-width: 576px) {
@@ -4054,7 +4054,7 @@ textarea.form-control-lg {
   flex-wrap: inherit;
   align-items: center;
   justify-content: space-between;
-  background-color: #081c1d;
+  background-color: #23342B;
 }
 .navbar-brand {
   padding-top: 0.3125rem;
@@ -7821,7 +7821,7 @@ textarea.form-control-lg {
 
 .bg-secondary {
   --bs-bg-opacity: 1;
-  background-color: #081c1d !important;
+  background-color: #23342B!important;
 }
 
 .bg-success {

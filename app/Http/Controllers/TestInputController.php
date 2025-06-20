@@ -110,7 +110,7 @@ curl_setopt_array($curl, [
 ]);
 
 $response = curl_exec($curl);  
-// dd($response);
+
 $err = curl_error($curl);
 
 $datas = json_decode($response);

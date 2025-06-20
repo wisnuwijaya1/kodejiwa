@@ -56,6 +56,7 @@
 
         <div class="content content--full">
             @yield('content')
+       
         </div>
     </main>
 
