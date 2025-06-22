@@ -15,7 +15,7 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="hover-underline-animation" style="color: #fefbdc; margin-left: 50px;"  href="{{route('dashboardawal')}}">Home</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="hover-underline-animation" style="color: #fefbdc; margin-left: 50px;" href="{{route('dashboardawal')}}">Tentang</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="hover-underline-animation" style="color: #fefbdc; margin-left: 50px;" href="{{ route('landing.hubungi') }}">Konsultasi</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="hover-underline-animation" style="color: #fefbdc; margin-left: 50px;" href="{{ route('landing.hubungi') }}">Hubungi Kami</a></li>
                         <br>
                         <!-- <button onclick="login()" href="{{route('login')}}" class="btn btn-primary btn3d fw-bold" type="button" style="margin-left: 50px; padding: 5px 30px 5px 30px; color: #fefbdc;">Login</button> -->
                     </ul>

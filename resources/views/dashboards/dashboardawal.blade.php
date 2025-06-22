@@ -38,16 +38,17 @@
     <br>
     <br>
     <br>
+    <br>
+    <br>
 
      <div class="container px-6" id="profil">
                 <div class="row gx-6 align-items-center">
                     <div class="col-lg-6">
                         <!-- Mashead text and app badges-->
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                            <h1 style="font-family: Montserrat; color: #fefbdc;"  >Temukan arah hidupmu lewat decoding jiwa</h1>
+                            <h1 style="font: Helvetica Now; color: #fefbdc;"  >Temukan arah hidupmu lewat decoding jiwa</h1>
                             <br>
-                            <p style="font-family: Montserrat; color: #fefbdc; font-size: 20px;">Kami bukan guru. Kami bukan peramal. KodeJiwa hadir sebagai teman refleksi—untuk bantu kamu mengenali siapa dirimu, pola hidupmu, dan ke arah mana langkahmu sebenarnya.
-</p>
+                            <p style="font: Helvetica Now; color: #fefbdc; font-size: 20px;">Kami bukan guru. Kami bukan peramal. KodeJiwa hadir sebagai teman refleksi—untuk bantu kamu mengenali siapa dirimu, pola hidupmu, dan ke arah mana langkahmu sebenarnya.</p>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
 
                                  <!-- <a href="{{route('landing.hubungi')}}"
@@ -56,7 +57,7 @@
                         <span
                           class="btn btn-primary btn3d"onclick="goCreate(this)" data-toggle="modal" data-target="#create-new-modal"
                         >
-                          <span> Mulai Tes Awal Gratis ↓ </span>
+                          <span style="font: Helvetica Now;"> Mulai Tes Awal Gratis ↓ </span>
                         </span>
                       </a>
 
@@ -66,7 +67,7 @@
                     <div class="col-lg-6">
 
 
-                        <img src="{{asset('test1.png')}}" style="max-width: 100%; margin-left: -10px;" class="img-fluid"  />
+                        <img src="{{asset('tampilanawal.png')}}" style="max-width: 100%; margin-left: -10px;" class="img-fluid"  />
                            
            
                     </div>
@@ -83,48 +84,41 @@
       <div class="container px-5" id="tentang">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-xl-8">
-                        <h1 style="font-family: Montserrat; text-align: center; color: #fefbdc;">🔹 Tentang KodeJiwa</h1>
+                        <h1 style="font: Helvetica Now; text-align: center; color: #fefbdc;">Tentang KodeJiwa</h1>
                         <br>
-                        <div style="text-align: center; font-size: 20px; line-height: 40px; color: #fefbdc;" ><p>Setiap orang menyimpan potensi, namun tak semua bisa langsung melihatnya. Kadang kita stuck di pola yang sama. Kadang kita merasa ada “yang kosong”, tapi nggak tahu apa.
+                        <div style="font: Helvetica Now; text-align: center; font-size: 20px; line-height: 40px; color: #fefbdc;" ><p>Setiap orang menyimpan potensi, namun tak semua bisa langsung melihatnya. Kadang kita stuck di pola yang sama. Kadang kita merasa ada “yang kosong”, tapi nggak tahu apa.
 
 KodeJiwa hadir sebagai teman. Kami percaya, perubahan tak selalu butuh nasihat besar—kadang cukup dimulai dari ngobrol jujur dan memahami diri lebih dalam.
 </p></div>
                       <br>
                       <br>
-                        <img src="{{asset('test2.png')}}" class="img-fluid" />
                     </div>
                 </div>
             </div>
 
 
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
 
 
             <div class="container px-5" style=" color: #fefbdc">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6">
                         <div class="mb-5 mb-lg-0 text-center text-lg-start" >
-                            <h1 style="font-family: Montserrat;" >🔹 Kenali 4 Pilar KodeJiwa</h1>
+                            <h1 style="font: Helvetica Now;" >Kenali 4 Pilar KodeJiwa</h1>
                             <br>
-                            <p style="font-size: 20px; color: #fefbdc">
-1. Sacred Mapping 🌌</p>
+                            <h3 style="font: Helvetica Now; font-size: 20px; color: #fefbdc">
+1. Sacred Mapping </h3>
 <p>Langkah pertama untuk mengenali arah dan pola unik dalam dirimu. Di sini kamu akan menemukan cerminan dari kecenderungan alami dan potensi yang mungkin belum kamu sadari.</p>
-<p style="font-size: 20px;color: #fefbdc">
+<h3 style="font: Helvetica Now; font-size: 20px;color: #fefbdc">
   <br>
-2. Behavioral Profiling 🧬</p>
+2. Behavioral Profiling </h3>
 <p>Bagaimana kamu berpikir, merespons situasi, dan berinteraksi dengan orang lain—semua punya polanya. Profil ini bantu kamu memahami kebiasaan batin dan gaya berperilakumu sehari-hari.</p>
   <br>
-<p style="font-size: 20px;  color: #fefbdc">
-3. Modern Psychology 🧠</p>
+<h3 style=" font: Helvetica Now; font-size: 20px;  color: #fefbdc">
+3. Modern Psychology </h3>
 <p>Kami menyajikan pendekatan psikologi yang sederhana dan aplikatif—agar kamu bisa memahami emosi, luka batin, dan dinamika pikiran dengan lebih jernih.</p>
   <br>
-<p style="font-size: 20px; color: #fefbdc">
-4. Soul Calling ✨</p>
+<h3 style=" font: Helvetica Now; font-size: 20px; color: #fefbdc">
+4. Soul Calling </h3>
 <p>Di akhir, kamu akan diajak menyelami kembali apa yang benar-benar penting bagimu—bukan untuk diberi jawaban, tapi untuk menemukan suara hatimu sendiri.</p>
                         </div>
                     </div>
@@ -134,7 +128,7 @@ KodeJiwa hadir sebagai teman. Kami percaya, perubahan tak selalu butuh nasihat b
                             
                             <div class="device-wrapper">
 
-                                        <img src="{{asset('playground_assets3/rectangle5652-smu8-600w.png')}}" class="img-fluid" />
+                                        <img src="{{asset('tentang.png')}}" style="margin-left: center;" class="img-fluid" />
                                     
                             </div>
                         </div>
@@ -153,49 +147,28 @@ KodeJiwa hadir sebagai teman. Kami percaya, perubahan tak selalu butuh nasihat b
                     <div class="col-lg-6">
                         <!-- Mashead text and app badges-->
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                            <h2 style="font-family: Montserrat; color: #fefbdc" >🔹 Apa yang Akan Kamu Dapat?</h2>
+                            <h1 style="font: Helvetica Now; color: #fefbdc" >Apa yang kamu dapat?</h1>
                             <br>
-                            <p style="font-size: 15px; line-height: 25px; color: #fefbdc">
-                              Gunakan visual kotak 3 bagian:
-                            </p>
-                            <p  style="font-size: 15px; line-height: px; color: #fefbdc">
-                              1.	Gaya Berkomunikasi:
-                            </p>
-                            <p  style="font-size: 15px; line-height: 25px; color: #fefbdc">
-                              Apakah kamu cenderung to the point, pendengar yang kuat, atau penggerak kelompok?
-                            </p>
-                            <p  style="font-size: 15px; line-height: px; color: #fefbdc">
-                              2.	Respons Saat Tertekan:
-                            </p>
-                            <p  style="font-size: 15px; line-height: 25px; color: #fefbdc">
-                              Apakah kamu melawan, mundur, memendam, atau malah menjadi sangat aktif?
-                            </p>
-                            <p  style="font-size: 15px; line-height: px; color: #fefbdc">
-                              3.	Kebutuhan Batin Tersembunyi:
-                            </p>
-                            <p  style="font-size: 15px; line-height: 25px; color: #fefbdc">
-                              Setiap profil punya kebutuhan dasar yang sering tidak disadari.
-                            </p>
                             
+<p style="font: Helvetica Now; font-size: 20px; line-height: 25px; color: #fefbdc">1.	Gaya Berkomunikasi</p>
+<p style="font: Helvetica Now; font-size: 20px; line-height: 25px; color: #fefbdc">Apakah kamu cenderung to the point, pendengar yang kuat, atau penggerak kelompok?</p>
+  <p style=" font: Helvetica Now; font-size: 20px; line-height: 25px; color: #fefbdc">2.	Respons Saat Tertekan</p>
+<p style="font: Helvetica Now; font-size: 20px; line-height: 25px; color: #fefbdc">Apakah kamu melawan, mundur, memendam, atau malah menjadi sangat aktif?</p>
+<p style="font: Helvetica Now; font-size: 20px; line-height: 25px; color: #fefbdc">3.	Kebutuhan Batin Tersembunyi</p>
+<p style="font: Helvetica Now; font-size: 20px; line-height: 25px; color: #fefbdc">Setiap profil punya kebutuhan dasar yang sering tidak disadari.</p>                          
                         </div>
                     </div>
                    <div class="col-lg-6">
                         <!-- Mashead text and app badges-->
-                        <div class="mb-5 mb-lg-0 text-center text-lg-start" style="margin-top: -90px;">
-                            <h2 style="font-family: Montserrat; color: #fefbdc" >🔹 Proses</h2>
+                        <div class="mb-5 mb-lg-0 text-center text-lg-start">
+                            <h1 style="font: Helvetica Now; color: #fefbdc" >Proses</h1>
                             <br>
-                             <p  style="font-size: 15px; line-height: px; color: #fefbdc">
-                              1.	Jawab pertanyaan pilihan ganda (santai, 5–7 menit).
-                            </p>
-                             <p  style="font-size: 15px; line-height: px; color: #fefbdc">
-                              2.	Sistem menyusun ringkasan profil kepribadianmu.
-                            </p>
-                             <p  style="font-size: 15px; line-height: px; color: #fefbdc">
-                              3.	Kamu akan melihat insight tentang kekuatan, tantangan, dan tips keseimbangan.
-                            </p>
-                             <p  style="font-size: 15px; line-height: px; color: #fefbdc">
-                              4.	Bisa lanjut ke eksplorasi emosional lewat pendekatan psikologi modern.
-                            </p>
+                            <br>
+                            <p style="font: Helvetica Now; font-size: 20px; line-height: 25px; color: #fefbdc">1.	Jawab pertanyaan pilihan ganda (santai, 5–7 menit)</p>
+                            <p style="font: Helvetica Now; font-size: 20px; line-height: 25px; color: #fefbdc">2.	Sistem menyusun ringkasan profil kepribadianmu</p>
+                            <p style="font: Helvetica Now; font-size: 20px; line-height: 25px; color: #fefbdc">3.	Kamu akan melihat insight tentang kekuatan, tantangan, dan tips keseimbangan</p>
+                            <p style="font: Helvetica Now; font-size: 20px; line-height: 25px; color: #fefbdc">4.	Bisa lanjut ke eksplorasi emosional lewat pendekatan psikologi modern</p>
+
                            
                         </div>
                 </div>

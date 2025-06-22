@@ -45,7 +45,7 @@
 				
 			<div class="modal-footer">
 				<div class="col-md-6">
-					<button type="button" class="btn btn-danger btn3d" data-dismiss="modal" style="position: relative;">Tutup</button>
+					<button type="button" class="btn btn-primary btn3d" data-dismiss="modal" style="position: relative;">Tutup</button>
 				</div>
 				<div class="col-md-3"></div>
 				<div class="col-md-2 text-right">

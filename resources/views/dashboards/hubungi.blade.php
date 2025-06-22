@@ -57,7 +57,7 @@
 
               <div class="container px-6">
     <div class="row m-0 py-5">
-      <h3 style="font-size: 26px; color: #fefbdc">Kantor Konsultasi</h3>
+      <h3 style="font-size: 26px; color: #fefbdc">Kunjungi Kami</h3>
       <br>
       <p style="font-size: 20px; line-height: 40px; color: #fefbdc">Jl. Kebon Kopi No.173, Cibeureum</p>
       <p style="font-size: 20px; line-height: 40px; color: #fefbdc">Kota Cimahi, Jawa Barat 40535, Indonesia</p>

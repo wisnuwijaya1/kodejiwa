@@ -74,9 +74,9 @@
 
 				</tbody>
 			</table>
-			<h1 style="font-family: Montserrat; text-align: center; color: #fefbdc;">🔹Jika Ingin Melanjutkan Konsultasi Dengan Psikolog Silahkan Klik Tombol Hubungi Kami🔹</h1>
+			<h3 style="font: Helvetica Now; text-align: center; color: #fefbdc;">Hubungi ARA untuk lanjut ke tahap berikutnya!</h3>
 			<div class="col text-right nav-primary" style="text-align: center;">
-		<a href="https://wa.me/628157098999?text=Halo%20saya%20tertarik%20dengan%20jasa%20Anda" target="_blank" class="btn btn-primary btn3d fw-bold" id="btnwa"  enabled>Hubungi Kami</a>
+		<a href="https://wa.me/628157098999?text=Halo%20saya%20tertarik%20dengan%20jasa%20Anda" target="_blank" class="btn btn-danger btn3d fw-bold" id="btnwa"  enabled>Hubungi Ara via WhatsApp</a>
 
 <
 	</div>

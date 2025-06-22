@@ -79,7 +79,7 @@ class LandingController extends Controller
         ];
      User::create($dataUser);
 
-     $apiKey = 'AIzaSyACr3TQTOpYHelo7DerAS2kBnSw1P5ak0w';
+     $apiKey = 'AIzaSyAmCE7uoiLcG4asyW2fjSljyZjZM7Cn8Nk';
 
 $curl = curl_init();
 		
@@ -89,9 +89,11 @@ Berikan hasilnya dalam bentuk rangkuman ringkas tanpa penjelasan teori.
 Fokuskan pada 3 hal utama:
 	1.	Perilaku saya yang umum
 	2.	Motivasi tersembunyi saya
-	3.	Jalur kehidupan dalam sosial, pekerjaan, dan percintaan
+	3.	Jalur kehidupan dalam sosial
+    4.  Jalur kehidupan pekerjaan
+    5.  Jalur kehidupan percintaan
 
-Tulis narasinya mengalir, intuitif, dan to the point. Jangan tampilkan angka atau istilah teknis.'.$name.$tanggal;
+Tulis narasinya minimal 1000 karakter dan maksimal 1500 karakter. Hasil analisa diharapkan mengalir, intuitif, dan to the point. Jangan tampilkan angka atau istilah teknis.'.$name.$tanggal;
         $data['contents'][0] =$dt;
 
 

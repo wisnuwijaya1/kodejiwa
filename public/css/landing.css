@@ -3035,7 +3035,7 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  color: #fff;
+  color: black;
   background-color: #e7ce70;
   border-color: #e7ce70;
 }
@@ -11360,6 +11360,7 @@ html {
   justify-content: center;
   align-items: center;
 }
+
 
 #mainNav {
   padding-top: 1rem;

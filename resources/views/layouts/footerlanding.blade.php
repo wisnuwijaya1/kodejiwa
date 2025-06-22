@@ -15,7 +15,7 @@
                   <p style="color: #fefbdc; font-size:15px;">Informasi yang disajikan oleh Kode Jiwa bertujuan untuk explorasi diri, pengembangan personal, dan refleksi batin. Bukan pengganti diagnosis medis, terapi psikologis, atau keputusan profesional lainnya. Gunakan sebagai panduan, bukan kepastian.</p>
                 </p>
                  <br>
-          <br>
+
                 <span class="fw-bold" style="color: #e7ce70; font-size:20px;" >FAQ (Pertanyaan Umum)</span>
                 </p>
                 <!-- <p class="u-i-footer-light-text06 paragraphDefault" style="color: #fefbdc;"> -->
