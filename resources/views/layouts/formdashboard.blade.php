@@ -1,4 +1,6 @@
+<style>
 
+</style>
 
 <div class="modal fade" id="create-new-modal" data-backdrop="static">
 	<div class="modal-dialog">
@@ -43,15 +45,10 @@
 					<i class="form-group__bar"></i>
 				</div>
 				
-			<div class="modal-footer">
-				<div class="col-md-6">
-					<button type="button" class="btn btn-primary btn3d" data-dismiss="modal" style="position: relative;">Tutup</button>
-				</div>
-				<div class="col-md-3"></div>
-				<div class="col-md-2 text-right">
-					<button type="submit" id="submitBtn" class="btn btn-primary btn3d" style="position: relative;">Kirim</button>									
-				</div>
-			</div>
+			<div class="modal-footer d-flex flex-column flex-md-row justify-content-end align-items-stretch gap-2 w-100">
+    <button type="button" class="btn btn-primary btn3d w-100 w-md-auto" data-dismiss="modal">Tutup</button>
+    <button type="submit" id="submitBtn" class="btn btn-primary btn3d w-100 w-md-auto">Kirim</button>
+</div>
 			
 		</div>
 	</div>
