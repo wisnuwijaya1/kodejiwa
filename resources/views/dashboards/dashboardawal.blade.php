@@ -48,7 +48,7 @@
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
                             <h1 style="font: Helvetica Now; color: #fefbdc;"  >Temukan arah hidupmu lewat decoding jiwa</h1>
                             <br>
-                            <p style="font: Helvetica Now; color: #fefbdc; font-size: 20px;">Kami bukan guru. Kami bukan peramal. KodeJiwa hadir sebagai teman refleksi—untuk bantu kamu mengenali siapa dirimu, pola hidupmu, dan ke arah mana langkahmu sebenarnya.</p>
+                            <p style="font-family: 'Helvetica Now', sans-serif;line-height: 30px; color: #fefbdc; font-size: 20px;">Kami bukan guru. Kami bukan peramal. KodeJiwa hadir sebagai teman refleksi—untuk bantu kamu mengenali siapa dirimu, pola hidupmu, dan ke arah mana langkahmu sebenarnya.</p>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
 
                                  <!-- <a href="{{route('landing.hubungi')}}"
@@ -86,7 +86,7 @@
                     <div class="col-xl-8">
                         <h1 style="font: Helvetica Now; text-align: center; color: #fefbdc;">Tentang KodeJiwa</h1>
                         <br>
-                        <div style="font: Helvetica Now; text-align: center; font-size: 20px; line-height: 40px; color: #fefbdc;" ><p>Setiap orang menyimpan potensi, namun tak semua bisa langsung melihatnya. Kadang kita stuck di pola yang sama. Kadang kita merasa ada “yang kosong”, tapi nggak tahu apa.
+                        <div style="font: Helvetica Now; text-align: center; font-size: 20px; line-height: 30px; color: #fefbdc;" ><p>Setiap orang menyimpan potensi, namun tak semua bisa langsung melihatnya. Kadang kita stuck di pola yang sama. Kadang kita merasa ada “yang kosong”, tapi nggak tahu apa.
 
 KodeJiwa hadir sebagai teman. Kami percaya, perubahan tak selalu butuh nasihat besar—kadang cukup dimulai dari ngobrol jujur dan memahami diri lebih dalam.
 </p></div>
@@ -150,12 +150,12 @@ KodeJiwa hadir sebagai teman. Kami percaya, perubahan tak selalu butuh nasihat b
                             <h1 style="font: Helvetica Now; color: #fefbdc" >Apa yang kamu dapat?</h1>
                             <br>
                             
-<p style="font: Helvetica Now; font-size: 20px; line-height: 25px; color: #fefbdc">1.	Gaya Berkomunikasi</p>
-<p style="font: Helvetica Now; font-size: 20px; line-height: 25px; color: #fefbdc">Apakah kamu cenderung to the point, pendengar yang kuat, atau penggerak kelompok?</p>
-  <p style=" font: Helvetica Now; font-size: 20px; line-height: 25px; color: #fefbdc">2.	Respons Saat Tertekan</p>
-<p style="font: Helvetica Now; font-size: 20px; line-height: 25px; color: #fefbdc">Apakah kamu melawan, mundur, memendam, atau malah menjadi sangat aktif?</p>
-<p style="font: Helvetica Now; font-size: 20px; line-height: 25px; color: #fefbdc">3.	Kebutuhan Batin Tersembunyi</p>
-<p style="font: Helvetica Now; font-size: 20px; line-height: 25px; color: #fefbdc">Setiap profil punya kebutuhan dasar yang sering tidak disadari.</p>                          
+<p style="font: Helvetica Now; font-size: 20px; line-height: 20px; color: #fefbdc">1.	Gaya Berkomunikasi</p>
+<p style="font: Helvetica Now; font-size: 20px; line-height: 20px; color: #fefbdc">Apakah kamu cenderung to the point, pendengar yang kuat, atau penggerak kelompok?</p>
+  <p style=" font: Helvetica Now; font-size: 20px; line-height: 20px; color: #fefbdc">2.	Respons Saat Tertekan</p>
+<p style="font: Helvetica Now; font-size: 20px; line-height: 20px; color: #fefbdc">Apakah kamu melawan, mundur, memendam, atau malah menjadi sangat aktif?</p>
+<p style="font: Helvetica Now; font-size: 20px; line-height: 20px; color: #fefbdc">3.	Kebutuhan Batin Tersembunyi</p>
+<p style="font: Helvetica Now; font-size: 20px; line-height: 20px; color: #fefbdc">Setiap profil punya kebutuhan dasar yang sering tidak disadari.</p>                          
                         </div>
                     </div>
                    <div class="col-lg-6">
@@ -163,7 +163,7 @@ KodeJiwa hadir sebagai teman. Kami percaya, perubahan tak selalu butuh nasihat b
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
                             <h1 style="font: Helvetica Now; color: #fefbdc" >Proses</h1>
                             <br>
-                            <br>
+
                             <p style="font: Helvetica Now; font-size: 20px; line-height: 25px; color: #fefbdc">1.	Jawab pertanyaan pilihan ganda (santai, 5–7 menit)</p>
                             <p style="font: Helvetica Now; font-size: 20px; line-height: 25px; color: #fefbdc">2.	Sistem menyusun ringkasan profil kepribadianmu</p>
                             <p style="font: Helvetica Now; font-size: 20px; line-height: 25px; color: #fefbdc">3.	Kamu akan melihat insight tentang kekuatan, tantangan, dan tips keseimbangan</p>

@@ -28,6 +28,7 @@ Route::post('dashboardawal/store','LandingController@store')->name('dashboardawa
 
 
 
+
 //--Route Inputan Master Akun/User--
 Route::post('akun/list','AkunController@list')->name('akun.list');
 Route::get('akun/index','AkunController@index')->name('akun.index');
@@ -37,6 +38,8 @@ Route::post('akun/store','AkunController@store')->name('akun.store');
 Route::post('testinput/list','TestInputController@list')->name('testinput.list');
 Route::get('testinput/index','TestInputController@index')->name('testinput.index');
 Route::post('testinput/store','TestInputController@store')->name('testinput.store');
+Route::post('testinput/update','TestInputController@update')->name('testinput.update');
+
 
 
 

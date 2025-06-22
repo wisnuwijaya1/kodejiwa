@@ -19,6 +19,30 @@
         background-color: #23342B;
 
       }
+      textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 300px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  padding: 1rem;
+  resize: vertical;
+}
+
+/* Tambahan untuk tampilan lebih kecil seperti HP */
+@media screen and (max-width: 768px) {
+  textarea {
+    min-height: 250px;
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  textarea {
+    min-height: 200px;
+    font-size: 0.9rem;
+  }
+}
     </style>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
                     @if(session()->has('success'))
@@ -53,7 +77,11 @@
 </div>
  <!-- <div class="col-md-14">
 <div class="card"> -->
-
+<div class="form-group">
+					<input type="text" class="form-control" id="namalengkap" name="name" default=""  value="{{ $name }}" hidden>
+					<input type="text" class="form-control" id="tanggallahir" name="tanggal" default=""  value="{{ $tanggal }}" hidden>
+					<input type="text" class="form-control" id="nohp" name="nohp" default=""  value="{{ $nohp }}" hidden>
+				</div>
 	<div class="card-body content-table">
 			<table id="datatable" class="table table-bordered table-striped">
 
@@ -74,11 +102,15 @@
 
 				</tbody>
 			</table>
+
 			<h3 style="font: Helvetica Now; text-align: center; color: #fefbdc;">Hubungi ARA untuk lanjut ke tahap berikutnya!</h3>
 			<div class="col text-right nav-primary" style="text-align: center;">
-		<a href="https://wa.me/628157098999?text=Halo%20saya%20tertarik%20dengan%20jasa%20Anda" target="_blank" class="btn btn-danger btn3d fw-bold" id="btnwa"  enabled>Hubungi Ara via WhatsApp</a>
+		<a href="https://wa.me/628157098999?text=Halo%20saya%20tertarik%20dengan%20jasa%20Anda%20Nama: <?php if (isset($name)) {
+    print $name;
+}?>%20Tanggal Lahir :<?php if (isset($tanggal)) {
+    print $tanggal;
+}?>"  target="_blank" class="btn btn-danger btn3d fw-bold" id="btnwa"  enabled>Hubungi Ara via WhatsApp</a>
 
-<
 	</div>
 	<!-- </div>
 </div> -->
@@ -86,9 +118,29 @@
 </div>
 
 @include('layouts.footerlanding')
-
 <script>
-	const message = document.getElementById("message");  
+document.getElementById("btnwa").addEventListener("click", function () {
+  const name = document.getElementById("namalengkap").value;
+  const tanggal = document.getElementById("tanggallahir").value;
+  const nohp = document.getElementById("nohp").value;
+
+  fetch("{{ route('testinput.store') }}", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "X-CSRF-TOKEN": document.querySelector('meta[name="csrf-token"]').content
+    },
+    body: JSON.stringify({
+      name: name,
+      tanggal: tanggal,
+      nohp:nohp,
+    })
+  })
+ 
+});
+</script>
+<script>
+  const message = document.getElementById("message");  
 
 
         if (message.value.trim() === "") {
@@ -96,15 +148,17 @@
 	  btntest.hidden = false;
       btnwa.hidden = true;
 
+
 		 }
 		  else {
 
       btntest.hidden = true;
       btnwa.hidden = false;
     }
- 
-	
+
 </script>
+
+
 <script src="{{asset('default/vendors/jquery/jquery.min.js')}}"></script>
 
 

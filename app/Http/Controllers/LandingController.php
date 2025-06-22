@@ -58,6 +58,8 @@ class LandingController extends Controller
         $nohpExists = User::where('nohp', $request->nohp)->exists();
         $name = $request->name;
         $tanggal = $request->tanggal;
+        $nohp = $request->nohp;
+        $status = "pending";
 
     if ($emailExists) {
         return back()
@@ -74,7 +76,8 @@ class LandingController extends Controller
             'name'=>$request->name,
             'tanggal'=>$request->tanggal,
             'email'=>$request->email,
-            'nohp'=>$request->nohp,    
+            'nohp'=>$request->nohp,  
+            'status'  =>$status,
 
         ];
      User::create($dataUser);
@@ -123,7 +126,7 @@ $jawaban = $datas->candidates[0]->content->parts[0]->text;
          $message = 'Data Berhasil di Simpan';
         // return redirect()->back()->with('success', 'Data berhasil disimpan!');
  
-        return view('testinput.index',compact('jawaban','message'))->with('success', 'Data berhasil disimpan!');
+        return view('testinput.index',compact('jawaban','message','name','tanggal','nohp','status'))->with('success', 'Data berhasil disimpan!');
     }
 
     public function userprivacy()
