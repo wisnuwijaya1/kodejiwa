@@ -15,6 +15,7 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="hover-underline-animation" style="color: #fefbdc; margin-left: 50px;"  href="#profil">Home</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="hover-underline-animation" style="color: #fefbdc; margin-left: 50px;" href="#tentang">Tentang</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="hover-underline-animation" style="color: #fefbdc; margin-left: 50px;" href="#ara">ARA</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="hover-underline-animation" style="color: #fefbdc; margin-left: 50px;" href="{{ route('landing.hubungi') }}">Hubungi Kami</a></li>
                         <br>
                         <!-- <span

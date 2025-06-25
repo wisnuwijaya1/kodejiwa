@@ -138,8 +138,7 @@ KodeJiwa hadir sebagai teman. Kami percaya, perubahan tak selalu butuh nasihat b
        
             <br>
             <br>
-            <br>
-            <br>
+
 
 
         <div class="container px-6">
@@ -147,7 +146,7 @@ KodeJiwa hadir sebagai teman. Kami percaya, perubahan tak selalu butuh nasihat b
                     <div class="col-lg-6">
                         <!-- Mashead text and app badges-->
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                            <h1 style="font: Helvetica Now; color: #fefbdc" >Apa yang kamu dapat?</h1>
+                            <h1 style="font: Helvetica Now; color: #fefbdc" >Apa yang kamu dapat ?</h1>
                             <br>
                             
 <p style="font: Helvetica Now; font-size: 20px; line-height: 20px; color: #fefbdc">1.	Gaya Berkomunikasi</p>
@@ -174,7 +173,22 @@ KodeJiwa hadir sebagai teman. Kami percaya, perubahan tak selalu butuh nasihat b
                 </div>
             </div>
       </div>
-    
+      <br>
+      <br>
+    <div class="container px-5" id="ara">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-xl-8">
+                        <h1 style="font: Helvetica Now; text-align: center; color: #fefbdc;">ARA — Awakening Reflection Assistant</h1>
+                        <br>
+                    <p style="font: Helvetica Now; text-align: left; font-size: 20px; line-height: 30px; color: #fefbdc;" >- ARA hadir bukan memberi jawaban, tapi membantu kamu melihat yang belum terlihat.</p>
+                    <p style="font: Helvetica Now; text-align: left; font-size: 20px; line-height: 30px; color: #fefbdc;" >- ARA bantu kamu mengenali arah hidup dari cermin yang jujur: diri sendiri.</p>
+                    <p style="font: Helvetica Now; text-align: left; font-size: 20px; line-height: 30px; color: #fefbdc;" >- ARA menuntun kamu dari kesadaran → refleksi → keselarasan hidup.</p>
+                    <p style="font: Helvetica Now; text-align: left; font-size: 20px; line-height: 30px; color: #fefbdc;" >- ARA bantu kamu menyelaraskan langkah hidup dengan suara hati.</p>
+                      
+                      </div>
+                    </div>
+                </div>
+            </div>
       <br>
       <br>
       <br>
