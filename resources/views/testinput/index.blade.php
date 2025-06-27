@@ -89,7 +89,7 @@
 					<tr>
 						
 						<th ><label for="message"  style="color: #fefbdc;">Hasil Test:</label><br>
-						<textarea id="message" name="message" rows="15" cols="170"  style="color: #fefbdc; background-color: #23342B" disabled>
+						<textarea id="message" name="message" rows="15" cols="170"  style="color: #fefbdc; background-color: #23342B font-size: 15px" disabled>
 							<?php  if (isset($jawaban)) {
     print $jawaban;
 } else {
