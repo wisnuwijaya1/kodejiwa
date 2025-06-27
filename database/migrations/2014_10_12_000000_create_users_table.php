@@ -18,7 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('name')->default('');
             $table->string('tanggal')->default('');
             $table->string('email')->unique();
-            $table->string('nphp')->default('');
+            $table->string('nohp')->default('');
             $table->string('status')->default('');
             $table->rememberToken();
             $table->timestamps();
