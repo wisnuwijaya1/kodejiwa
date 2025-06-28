@@ -1,5 +1,87 @@
 @extends('layouts.appawal')
 @section('content')
+<style>
+ 
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.feature-box {
+  background-color: #1c2e20;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1 1 calc(25% - 20px);
+  min-width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  border: 1px solid #333;
+  transition: transform 0.2s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #e7ce70 ;
+}
+
+.feature-box h5 {
+  color: #e7ce70 ;
+  margin-bottom: 10px;
+}
+
+.feature-box p {
+  color: #fefbdc;
+  font-size: 15px;
+  font: Helvetica Now;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-box {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+
+.btn-3d {
+  background-color: #e7ce70; /* warna oranye */
+  color: #121212; /* warna teks hitam */
+  font-weight: 700;
+  font-size: 16px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 6px 15px rgba(255, 168, 0, 0.4); /* efek glow bawah */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-3d:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(255, 168, 0, 0.5);
+}
+
+.btn-3d:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 10px rgba(255, 168, 0, 0.3);
+}
+
+</style>
 <head>
 
 
@@ -54,8 +136,9 @@
                                  <!-- <a href="{{route('landing.hubungi')}}"
                         > -->
                         <br>
+                        <br>
                         <span
-                          class="btn btn-primary btn3d"onclick="goCreate(this)" data-toggle="modal" data-target="#create-new-modal"
+                          class="btn-3d"onclick="goCreate(this)" data-toggle="modal" data-target="#create-new-modal"
                         >
                           <span style="font: Helvetica Now;"> Mulai Tes Awal Gratis ↓ </span>
                         </span>
@@ -86,10 +169,7 @@
                     <div class="col-xl-8">
                         <h1 style="font: Helvetica Now; text-align: center; color: #fefbdc;">Tentang KodeJiwa</h1>
                         <br>
-                        <div style="font: Helvetica Now; text-align: center; font-size: 20px; line-height: 30px; color: #fefbdc;" ><p>Setiap orang menyimpan potensi, namun tak semua bisa langsung melihatnya. Kadang kita stuck di pola yang sama. Kadang kita merasa ada “yang kosong”, tapi nggak tahu apa.
-
-KodeJiwa hadir sebagai teman. Kami percaya, perubahan tak selalu butuh nasihat besar—kadang cukup dimulai dari ngobrol jujur dan memahami diri lebih dalam.
-</p></div>
+                        <div style="font: Helvetica Now; text-align: center; font-size: 20px; line-height: 30px; color: #fefbdc;" ><p>Setiap orang punya potensi, tapi kadang kita sulit melihatnya sendiri. Seringkali, kita terjebak dalam pola yang sama atau merasa kosong tanpa tahu apa penyebabnya. KodeJiwa hadir sebagai teman yang percaya bahwa perubahan tidak selalu butuh nasihat besar. Terkadang, cukup dimulai dari obrolan jujur dan memahami diri lebih dalam.</p></div>
                       <br>
                       <br>
                     </div>
@@ -111,11 +191,11 @@ KodeJiwa hadir sebagai teman. Kami percaya, perubahan tak selalu butuh nasihat b
 <h3 style="font: Helvetica Now; font-size: 20px;color: #fefbdc">
   <br>
 2. Behavioral Profiling </h3>
-<p>Bagaimana kamu berpikir, merespons situasi, dan berinteraksi dengan orang lain—semua punya polanya. Profil ini bantu kamu memahami kebiasaan batin dan gaya berperilakumu sehari-hari.</p>
+<p>Bagaimana kamu berpikir, merespons situasi, dan beberperilakumungan orang lain, kita cari tau bersama polanya. Profil ini bantu kamu memahami kebiasaan batin dan gaya berperilakumu sehari-hari.</p>
   <br>
 <h3 style=" font: Helvetica Now; font-size: 20px;  color: #fefbdc">
 3. Modern Psychology </h3>
-<p>Kami menyajikan pendekatan psikologi yang sederhana dan aplikatif—agar kamu bisa memahami emosi, luka batin, dan dinamika pikiran dengan lebih jernih.</p>
+<p>Kami menyajikan pendekatan psikologi yang sederhana dan aplikatif— agar kamu bisa memahami dinamika pikiran dengan lebih jernih.</p>
   <br>
 <h3 style=" font: Helvetica Now; font-size: 20px; color: #fefbdc">
 4. Soul Calling </h3>
@@ -189,8 +269,60 @@ KodeJiwa hadir sebagai teman. Kami percaya, perubahan tak selalu butuh nasihat b
                     </div>
                 </div>
             </div>
+            <br>
+      <br>
+<div class="features-container">
+  <div class="feature-box">
+    <br>
+    <h5>1. Sacred Mapping (Rp99.000)</h5>
+    <p>Gambaran personal aspek diri, sosial, pekerjaan, dan hubungan berdasarkan nama dan tanggal lahir.</p>
+  </div>
+  <div class="feature-box">
+    <br>
+    <h5>2. ⁠Behavior Analysis (Rp149.000)</h5>
+    <p>Analisis perilaku dan kebiasaan sehari-hari untuk pemahaman lebih dalam.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div>
+  <div class="feature-box">
+    <br>
+    <h5>3. Modern Psychology (Rp249.000)</h5>
+    <p>Dua kali sesi one-on-one untuk eksplorasi aspek diri, sosial, pekerjaan, dan hubungan.</p>
+  </div>
+  <div class="feature-box">
+    <br>
+    <h5>4. Soul Calling (Rp499.000)</h5>
+    <p>Program coaching satu bulan dengan afirmasi harian dan empat kali sesi coaching one-on-one.</p>
+  </div>
+</div>
       <br>
       <br>
+
+      <div class="features-container">
+  <div class="feature-box">
+    <br>
+    <h5>Bundling Eksplorasi Diri Komplit (Rp199.000)</h5>
+    <p>Sacred Mapping + Behavior Analysis.</p>
+  </div>
+  <div class="feature-box">
+    <br>
+    <h5>Bundling Transformasi Intensif (Rp399.000)</h5>
+    <p>Sacred Mapping + Behavior Analysis + Modern Psychology.</p>
+  </div>
+  <div class="feature-box">
+    <br>
+    <h5>Bundling Perjalanan Komprehensif (Rp799.000)</h5>
+    <p>Sacred Mapping + Behavior Analysis + Modern Psychology + Soul Calling.</p>
+  </div>
+  <div class="feature-box">
+    <br>
+    <h5>Special Promo!</h5>
+    <p>Bundling setelah setiap sesi pertemuan/ menggunakan kode referal via WhatsApp!</p>
+  </div>
+            
+
+</div>
+
+
+
       <br>
       <br>
     
