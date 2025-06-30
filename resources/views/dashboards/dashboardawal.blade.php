@@ -270,6 +270,17 @@
                 </div>
             </div>
             <br>
+         
+                    <div  >
+                      <span
+                          class="btn-3d" style=" position: absolute; left: 50vw; transform: translateX(-50%);" onclick="goCreate(this)" data-toggle="modal" data-target="#create-new-modal"
+                        >
+                          <span style="font: Helvetica Now;"> Mulai Tes Awal Gratis ↓ </span>
+                        </span>
+                    </div>
+                      
+      <br>
+      <br>
       <br>
 <div class="features-container">
   <div class="feature-box">
