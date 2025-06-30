@@ -7,7 +7,7 @@
         <img src="{{asset('Kode Jiwa - Logo.png')}}" width="125" height="90">   
     </a>
 
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-black rounded" type="button" data-bs-toggle="collapse" id="collapse" data-bs-target="#navbarResponsive" >
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-black rounded btn-3d" type="button" data-bs-toggle="collapse" id="collapse" data-bs-target="#navbarResponsive" >
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
