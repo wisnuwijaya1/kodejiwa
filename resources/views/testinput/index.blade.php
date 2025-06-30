@@ -19,6 +19,52 @@
         background-color: #23342B;
 
       }
+
+      .wa-button {
+      display: inline-flex;
+      align-items: center;
+      background-color: #25D366;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 14px 28px;
+      border-radius: 999px;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .wa-button:hover {
+      background-color: #1ebe5b;
+      transform: translateY(-2px);
+    }
+
+    .wa-button img {
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+    }
+
+    @media (max-width: 480px) {
+      .section h2 {
+        font-size: 2rem;
+      }
+
+      .section p {
+        font-size: 1rem;
+      }
+
+      .wa-button {
+        font-size: 16px;
+        padding: 12px 22px;
+      }
+
+      .wa-button img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+    }
       textarea {
   width: 100%;
   max-width: 100%;
@@ -102,14 +148,19 @@
 
 				</tbody>
 			</table>
-
-			<h3 style="font: Helvetica Now; text-align: center; color: #fefbdc;">Hubungi ARA untuk lanjut ke tahap berikutnya!</h3>
-			<div class="col text-right nav-primary" style="text-align: center;">
-		<a href="https://wa.me/628157098999?text=Halo%20saya%20tertarik%20dengan%20jasa%20Anda%20Nama: <?php if (isset($name)) {
+      <div class="col text-right" style="text-align: center;">
+      <h3 style="font: Helvetica Now; text-align: center; color: #fefbdc;">Hubungi ARA untuk lanjut ke tahap berikutnya!</h3>
+      <br>
+<a href="https://wa.me/628157098999?text=Halo%20saya%20tertarik%20dengan%20jasa%20Anda%20Nama: <?php if (isset($name)) {
     print $name;
 }?>%20Tanggal Lahir :<?php if (isset($tanggal)) {
     print $tanggal;
-}?>"  target="_blank" class="btn btn-danger btn3d fw-bold" id="btnwa"  enabled>Hubungi Ara via WhatsApp</a>
+}?>" class="wa-button" target="_blank" id="btnwa">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" class="wa-icon">
+    Hubungi Ara via WhatsApp
+  </a>
+			
+			
 
 	</div>
 	<!-- </div>
