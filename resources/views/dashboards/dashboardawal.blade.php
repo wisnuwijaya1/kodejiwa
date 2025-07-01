@@ -71,17 +71,27 @@
   transition: all 0.2s ease;
 }
 
-.btn-3dd {
-  background-color: #e7ce70; /* warna oranye */
-  color: #121212; /* warna teks hitam */
-  font-weight: 600;
-  font-size: 15px;
-  padding: 8px 8px;
+.button-container {
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  align-items: center;     /* Vertical center jika butuh */
+  padding: 40px 0;         /* Jarak atas-bawah */
+}
+
+.cta-button {
+  background-color: #e7ce70;
+  color: black;
+  padding: 8px 30px;
+  font-weight: bold;
+  border-radius: 25px;
   border: none;
-  border-radius: 50px;
-  box-shadow: 0 6px 15px rgba(255, 168, 0, 0.4); /* efek glow bawah */
+  box-shadow: 0 5px 15px rgba(255, 231, 97, 0.6);
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  box-shadow: 0 5px 20px rgba(255, 231, 97, 0.8);
 }
 
 .btn-3d:hover {
@@ -234,40 +244,7 @@
 
 
 
-        <div class="container px-6">
-                <div class="row gx-6 align-items-center">
-                    <div class="col-lg-6">
-                        <!-- Mashead text and app badges-->
-                        <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                            <h1 style="font: Helvetica Now; color: #fefbdc" >Apa yang kamu dapat ?</h1>
-                            <br>
-                            
-<p style="font: Helvetica Now; font-size: 20px; line-height: 20px; color: #fefbdc">1.	Gaya Berkomunikasi</p>
-<p style="font: Helvetica Now; font-size: 20px; line-height: 20px; color: #fefbdc">Apakah kamu cenderung to the point, pendengar yang kuat, atau penggerak kelompok?</p>
-  <p style=" font: Helvetica Now; font-size: 20px; line-height: 20px; color: #fefbdc">2.	Respons Saat Tertekan</p>
-<p style="font: Helvetica Now; font-size: 20px; line-height: 20px; color: #fefbdc">Apakah kamu melawan, mundur, memendam, atau malah menjadi sangat aktif?</p>
-<p style="font: Helvetica Now; font-size: 20px; line-height: 20px; color: #fefbdc">3.	Kebutuhan Batin Tersembunyi</p>
-<p style="font: Helvetica Now; font-size: 20px; line-height: 20px; color: #fefbdc">Setiap profil punya kebutuhan dasar yang sering tidak disadari.</p>                          
-                        </div>
-                    </div>
-                   <div class="col-lg-6">
-                        <!-- Mashead text and app badges-->
-                        <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                            <h1 style="font: Helvetica Now; color: #fefbdc" >Proses</h1>
-                            <br>
-
-                            <p style="font: Helvetica Now; font-size: 20px; line-height: 25px; color: #fefbdc">1.	Jawab pertanyaan pilihan ganda (santai, 5–7 menit)</p>
-                            <p style="font: Helvetica Now; font-size: 20px; line-height: 25px; color: #fefbdc">2.	Sistem menyusun ringkasan profil kepribadianmu</p>
-                            <p style="font: Helvetica Now; font-size: 20px; line-height: 25px; color: #fefbdc">3.	Kamu akan melihat insight tentang kekuatan, tantangan, dan tips keseimbangan</p>
-                            <p style="font: Helvetica Now; font-size: 20px; line-height: 25px; color: #fefbdc">4.	Bisa lanjut ke eksplorasi emosional lewat pendekatan psikologi modern</p>
-
-                           
-                        </div>
-                </div>
-            </div>
-      </div>
-      <br>
-      <br>
+        
     <div class="container px-5" id="ara">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-xl-8">
@@ -284,37 +261,46 @@
             </div>
             <br>
          
-                    <div  >
-                      <span
-                          class="btn-3dd" style=" position: absolute; left: 50vw; transform: translateX(-50%);" onclick="goCreate(this)" data-toggle="modal" data-target="#create-new-modal"
+                 
+                        <!-- Mashead text and app badges-->
+                        <div class="button-container">
+                           
+                        <span style="justify-content: center; align-items: center;"
+                          class="cta-button btn-3d"onclick="goCreate(this)" data-toggle="modal" data-target="#create-new-modal"
                         >
                           <span style="font: Helvetica Now;"> Mulai Tes Awal Gratis ↓ </span>
                         </span>
-                    </div>
+                      </a>
+                        </div>
+
+            
+
+  </div>
                       
       <br>
       <br>
-      <br>
+
 <div class="features-container">
   <div class="feature-box">
     <br>
     <h5>1. Sacred Mapping (Rp99.000)</h5>
-    <p>Gambaran personal aspek diri, sosial, pekerjaan, dan hubungan berdasarkan nama dan tanggal lahir.</p>
+    <p>Langkah pertamamu untuk mengenal diri lebih dalam! Dapatkan gambaran personal tentang aspek diri, sosial, pekerjaan, dan hubungan berdasarkan nama dan tanggal lahirmu.
+</p>
   </div>
   <div class="feature-box">
     <br>
     <h5>2. ⁠Behavior Analysis (Rp149.000)</h5>
-    <p>Analisis perilaku dan kebiasaan sehari-hari untuk pemahaman lebih dalam.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <p>Melangkah lebih jauh! Di tahap ini, kita akan menyelami aspek diri, sosial, pekerjaan, dan hubungan melalui analisis perilaku dan kebiasaan sehari-harimu melalui video 30 detik - 1 menit yang akan anda kirimkan!</p>
   </div>
   <div class="feature-box">
     <br>
     <h5>3. Modern Psychology (Rp249.000)</h5>
-    <p>Dua kali sesi one-on-one untuk eksplorasi aspek diri, sosial, pekerjaan, dan hubungan.</p>
+    <p>Pengalaman lebih intensif dengan sesi one-on-one! Dua kali pertemuan personal untuk mengupas aspek diri, sosial, pekerjaan, dan hubungan secara mendalam.</p>
   </div>
   <div class="feature-box">
     <br>
     <h5>4. Soul Calling (Rp499.000)</h5>
-    <p>Program coaching satu bulan dengan afirmasi harian dan empat kali sesi coaching one-on-one.</p>
+    <p>Program transformasi selama satu bulan! Nikmati afirmasi harian dan empat kali sesi coaching one-on-one untuk perubahan yang lebih nyata.</p>
   </div>
 </div>
       <br>
