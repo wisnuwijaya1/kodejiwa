@@ -74,8 +74,8 @@
 .btn-3dd {
   background-color: #e7ce70; /* warna oranye */
   color: #121212; /* warna teks hitam */
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 15px;
   padding: 8px 8px;
   border: none;
   border-radius: 50px;
