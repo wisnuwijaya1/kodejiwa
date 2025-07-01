@@ -76,7 +76,7 @@
   color: #121212; /* warna teks hitam */
   font-weight: 700;
   font-size: 16px;
-  padding: 8px 12px;
+  padding: 8px 8px;
   border: none;
   border-radius: 50px;
   box-shadow: 0 6px 15px rgba(255, 168, 0, 0.4); /* efek glow bawah */
