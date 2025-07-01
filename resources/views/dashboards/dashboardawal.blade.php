@@ -71,6 +71,19 @@
   transition: all 0.2s ease;
 }
 
+.btn-3dd {
+  background-color: #e7ce70; /* warna oranye */
+  color: #121212; /* warna teks hitam */
+  font-weight: 700;
+  font-size: 16px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 6px 15px rgba(255, 168, 0, 0.4); /* efek glow bawah */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
 .btn-3d:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 18px rgba(255, 168, 0, 0.5);
@@ -273,7 +286,7 @@
          
                     <div  >
                       <span
-                          class="btn-3d" style=" position: absolute; left: 50vw; transform: translateX(-50%);" onclick="goCreate(this)" data-toggle="modal" data-target="#create-new-modal"
+                          class="btn-3dd" style=" position: absolute; left: 50vw; transform: translateX(-50%);" onclick="goCreate(this)" data-toggle="modal" data-target="#create-new-modal"
                         >
                           <span style="font: Helvetica Now;"> Mulai Tes Awal Gratis ↓ </span>
                         </span>
