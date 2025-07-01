@@ -163,7 +163,7 @@
                         <span
                           class="btn-3d"onclick="goCreate(this)" data-toggle="modal" data-target="#create-new-modal"
                         >
-                          <span style="font: Helvetica Now;"> Mulai Tes Awal Gratis </span>
+                          <span style="font: Helvetica Now;"> Mulai Tes Awal Gratis ↓ </span>
                         </span>
                       </a>
 
@@ -187,21 +187,7 @@
             
 
   </div>
-      <div class="container px-5" id="tentang">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-xl-8">
-                        <h1 style="font: Helvetica Now; text-align: center; color: #fefbdc;">Tentang KodeJiwa</h1>
-                        <br>
-                        <div style="font: Helvetica Now; text-align: center; font-size: 20px; line-height: 30px; color: #fefbdc;" ><p>Setiap orang punya potensi, tapi kadang kita sulit melihatnya sendiri. Seringkali, kita terjebak dalam pola yang sama atau merasa kosong tanpa tahu apa penyebabnya. KodeJiwa hadir sebagai teman yang percaya bahwa perubahan tidak selalu butuh nasihat besar. Terkadang, cukup dimulai dari obrolan jujur dan memahami diri lebih dalam.</p></div>
-                      <br>
-                      <br>
-                    </div>
-                </div>
-            </div>
-
-
-
-
+      
             <div class="container px-5" style=" color: #fefbdc">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6">
@@ -243,42 +229,6 @@
             <br>
 
 
-
-        
-    <div class="container px-5" id="ara">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-xl-8">
-                        <h1 style="font: Helvetica Now; text-align: center; color: #fefbdc;">ARA — Awakening Reflection Assistant</h1>
-                        <br>
-                    <p style="font: Helvetica Now; text-align: left; font-size: 20px; line-height: 30px; color: #fefbdc;" >- ARA hadir bukan memberi jawaban, tapi membantu kamu melihat yang belum terlihat.</p>
-                    <p style="font: Helvetica Now; text-align: left; font-size: 20px; line-height: 30px; color: #fefbdc;" >- ARA bantu kamu mengenali arah hidup dari cermin yang jujur: diri sendiri.</p>
-                    <p style="font: Helvetica Now; text-align: left; font-size: 20px; line-height: 30px; color: #fefbdc;" >- ARA menuntun kamu dari kesadaran → refleksi → keselarasan hidup.</p>
-                    <p style="font: Helvetica Now; text-align: left; font-size: 20px; line-height: 30px; color: #fefbdc;" >- ARA bantu kamu menyelaraskan langkah hidup dengan suara hati.</p>
-                      
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-         
-                 
-                        <!-- Mashead text and app badges-->
-                        <div class="button-container">
-                           
-                        <span style="justify-content: center; align-items: center;"
-                          class="cta-button btn-3d"onclick="goCreate(this)" data-toggle="modal" data-target="#create-new-modal"
-                        >
-                          <span style="font: Helvetica Now;"> Mulai Tes Awal Gratis </span>
-                        </span>
-                      </a>
-                        </div>
-
-            
-
-  </div>
-                      
-      <br>
-      <br>
 
 <div class="features-container">
   <div class="feature-box">
@@ -330,8 +280,52 @@
             
 
 </div>
+<br>
+<br>
 
+<div class="container px-5" id="tentang">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-xl-8">
+                        <h1 style="font: Helvetica Now; text-align: center; color: #fefbdc;">Tentang KodeJiwa</h1>
+                        <br>
+                        <div style="font: Helvetica Now; text-align: center; font-size: 20px; line-height: 30px; color: #fefbdc;" ><p>Setiap orang punya potensi, tapi kadang kita sulit melihatnya sendiri. Seringkali, kita terjebak dalam pola yang sama atau merasa kosong tanpa tahu apa penyebabnya. KodeJiwa hadir sebagai teman yang percaya bahwa perubahan tidak selalu butuh nasihat besar. Terkadang, cukup dimulai dari obrolan jujur dan memahami diri lebih dalam.</p></div>
+                      <br>
+                      <br>
+                    </div>
+                </div>
+            </div>
+        
+    <div class="container px-5" id="ara">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-xl-8">
+                        <h1 style="font: Helvetica Now; text-align: center; color: #fefbdc;">ARA — Awakening Reflection Assistant</h1>
+                        <br>
+                    <p style="font: Helvetica Now; text-align: left; font-size: 20px; line-height: 30px; color: #fefbdc;" >- ARA hadir bukan memberi jawaban, tapi membantu kamu melihat yang belum terlihat.</p>
+                    <p style="font: Helvetica Now; text-align: left; font-size: 20px; line-height: 30px; color: #fefbdc;" >- ARA bantu kamu mengenali arah hidup dari cermin yang jujur: diri sendiri.</p>
+                    <p style="font: Helvetica Now; text-align: left; font-size: 20px; line-height: 30px; color: #fefbdc;" >- ARA menuntun kamu dari kesadaran → refleksi → keselarasan hidup.</p>
+                    <p style="font: Helvetica Now; text-align: left; font-size: 20px; line-height: 30px; color: #fefbdc;" >- ARA bantu kamu menyelaraskan langkah hidup dengan suara hati.</p>
+                      
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+         
+                 
+                        <!-- Mashead text and app badges-->
+                        <div class="button-container">
+                           
+                        <span style="justify-content: center; align-items: center;"
+                          class="cta-button btn-3d"onclick="goCreate(this)" data-toggle="modal" data-target="#create-new-modal"
+                        >
+                          <span style="font: Helvetica Now;"> Mulai Tes Awal Gratis ↓ </span>
+                        </span>
+                      </a>
+                        </div>
 
+            
+
+  </div>
 
       <br>
       <br>
