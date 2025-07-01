@@ -20,6 +20,29 @@
 
       }
 
+      .btn-3d {
+  background-color: #e7ce70; /* warna oranye */
+  color: #121212; /* warna teks hitam */
+  font-weight: 700;
+  font-size: 16px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 6px 15px rgba(255, 168, 0, 0.4); /* efek glow bawah */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+
+.btn-3d:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(255, 168, 0, 0.5);
+}
+
+.btn-3d:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 10px rgba(255, 168, 0, 0.3);
+}
       .wa-button {
       display: inline-flex;
       align-items: center;
@@ -212,6 +235,11 @@ document.getElementById("btnwa").addEventListener("click", function () {
 
 <script src="{{asset('default/vendors/jquery/jquery.min.js')}}"></script>
 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="js/scripts.js"></script>
+
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
 
 @endsection
