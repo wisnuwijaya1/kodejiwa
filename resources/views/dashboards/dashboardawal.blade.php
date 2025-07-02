@@ -163,7 +163,7 @@
                         <span
                           class="btn-3d"onclick="goCreate(this)" data-toggle="modal" data-target="#create-new-modal"
                         >
-                          <span style="font: Helvetica Now;"> Mulai Tes Awal Gratis ↓ </span>
+                          <span style="font: Helvetica Now;"> Mulai Tes Awal Gratis</span>
                         </span>
                       </a>
 
@@ -318,7 +318,7 @@
                         <span style="justify-content: center; align-items: center;"
                           class="cta-button btn-3d"onclick="goCreate(this)" data-toggle="modal" data-target="#create-new-modal"
                         >
-                          <span style="font: Helvetica Now;"> Mulai Tes Awal Gratis ↓ </span>
+                          <span style="font: Helvetica Now;"> Mulai Tes Awal Gratis </span>
                         </span>
                       </a>
                         </div>
