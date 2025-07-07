@@ -10,6 +10,6 @@ class UsersExport implements FromCollection
 {
     public function collection()
     {
-        return User::whereDate('created_at', Carbon::today())->get();
+        return User::all();
     }
 }
