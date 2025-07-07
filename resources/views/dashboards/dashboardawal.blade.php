@@ -188,11 +188,11 @@
 
   </div>
       
-            <div class="container px-5" style=" color: #fefbdc">
-                <div class="row gx-5 align-items-center">
+            <div class="row gx-5 justify-content-center" style=" color: #fefbdc">
+                <!-- <div class="row gx-5 align-items-center"> -->
                     <div class="col-lg-6">
                         <div class="mb-5 mb-lg-0 text-center text-lg-start" >
-                            <h1 style="font: Helvetica Now;" >Kenali 4 Pilar KodeJiwa</h1>
+                            <h1 style="font: Helvetica Now; text-align: center; color: #fefbdc;" >Kenali 4 Pilar KodeJiwa</h1>
                             <br>
                             <h3 style="font: Helvetica Now; font-size: 20px; color: #fefbdc">
 1. Sacred Mapping </h3>
@@ -211,17 +211,7 @@
 <p>Di akhir, kamu akan diajak menyelami kembali apa yang benar-benar penting bagimu—bukan untuk diberi jawaban, tapi untuk menemukan suara hatimu sendiri.</p>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-
-                        <div class="masthead-device-mockup">
-                            
-                            <div class="device-wrapper">
-
-                                        <img src="{{asset('tentang.png')}}" style="margin-left: center;" class="img-fluid" />
-                                    
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
        
@@ -301,7 +291,7 @@
                         <h1 style="font: Helvetica Now; text-align: center; color: #fefbdc;">ARA — Awakening Reflection Assistant</h1>
                         <br>
                     <p style="font: Helvetica Now; text-align: left; font-size: 20px; line-height: 30px; color: #fefbdc;" >- ARA hadir bukan memberi jawaban, tapi membantu kamu melihat yang belum terlihat.</p>
-                    <p style="font: Helvetica Now; text-align: left; font-size: 20px; line-height: 30px; color: #fefbdc;" >- ARA bantu kamu mengenali arah hidup dari cermin yang jujur: diri sendiri.</p>
+                    <p style="font: Helvetica Now; text-align: left; font-size: 20px; line-height: 30px; color: #fefbdc;" >- ARA bantu kamu mengenali arah hidup dari cermin yang jujur diri sendiri.</p>
                     <p style="font: Helvetica Now; text-align: left; font-size: 20px; line-height: 30px; color: #fefbdc;" >- ARA menuntun kamu dari kesadaran → refleksi → keselarasan hidup.</p>
                     <p style="font: Helvetica Now; text-align: left; font-size: 20px; line-height: 30px; color: #fefbdc;" >- ARA bantu kamu menyelaraskan langkah hidup dengan suara hati.</p>
                       
