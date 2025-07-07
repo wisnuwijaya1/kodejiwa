@@ -27,7 +27,7 @@ Route::post('dashboardawal/store','LandingController@store')->name('dashboardawa
 
 
 //exel
-Route::get('download/excel','DownloadController@excel')->name('download.excel');
+Route::get('download/excel_admin_kodejiwa','DownloadController@excel')->name('download.excel_admin_kodejiwa');
 
 
 //--Route Inputan Master Akun/User--
