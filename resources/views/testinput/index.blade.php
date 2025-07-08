@@ -174,7 +174,7 @@
       <div class="col text-right" style="text-align: center;">
       <h3 style="font: Helvetica Now; text-align: center; color: #fefbdc;">Hubungi ARA untuk lanjut ke tahap berikutnya!</h3>
       <br>
-<a href="https://wa.me/628157098999?text=Halo%20saya%20tertarik%20dengan%20jasa%20Anda%20Nama: <?php if (isset($name)) {
+<a href="https://wa.me/628157098999?text=Halo%20saya%20tertarik%20dengan%20KodeJiwa.%20Berikut%20informasi%20saya,%20Nama: <?php if (isset($name)) {
     print $name;
 }?>%20Tanggal Lahir :<?php if (isset($tanggal)) {
     print $tanggal;
