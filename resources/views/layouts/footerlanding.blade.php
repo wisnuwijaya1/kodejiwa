@@ -1,3 +1,13 @@
+<style>
+.gradient-text {
+  font-weight: 700; /* tebal */
+  font-size: 36px; /* ukuran besar */
+  background: linear-gradient(90deg, #f7e85b, #f29f05);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+</style>
+
 <footer class="footer" id="hubungi">
 
     <div class="container">
@@ -9,7 +19,7 @@
 
           <br>
           <br>
-                  <span class="fw-bold" style="color: #e7ce70; font-size:20px;" >DISCLAIMER</span>
+                  <span class="fw-bold gradient-text" style="color: #e7ce70; font-size:20px;" >DISCLAIMER</span>
                 </p>
                 <p class="u-i-footer-light-text06 paragraphDefault" style="color: #fefbdc;">
                   <p style="color: #fefbdc; font-size:15px;">KodeJiwa adalah platform pendampingan dan refleksi diri yang dirancang untuk membantu Anda mengenali potensi dan memahami diri sendiri dengan lebih baik. Harap perhatikan hal-hal berikut:</p></p>
@@ -24,7 +34,7 @@
                   <p class="fw-bold" style="color: #fefbdc; font-size:15px;">5. Refleksi diri adalah proses yang unik.</p>
                   <p style="color: #fefbdc; font-size:15px;">Kami memahami bahwa setiap individu memiliki perjalanan batin yang berbeda. KodeJiwa hadir sebagai teman perjalanan, bukan penentu arah hidup.</p>
                   <br>
-                <span class="fw-bold" style="color: #e7ce70; font-size:20px;" >FAQ (Pertanyaan Umum)</span>
+                <span class="fw-bold gradient-text" style="color: #e7ce70; font-size:20px;" >FAQ (Pertanyaan Umum)</span>
                 </p>
                 <!-- <p class="u-i-footer-light-text06 paragraphDefault" style="color: #fefbdc;"> -->
                   <p class="fw-bold" style="color: #fefbdc; font-size:15px;">1.⁠ ⁠Apa itu KodeJiwa?</p>

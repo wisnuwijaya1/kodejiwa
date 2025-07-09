@@ -1,7 +1,26 @@
 @extends('layouts.appawal')
 @section('content')
 <style>
- 
+ @keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.scroll-pop {
+  opacity: 0; /* default hidden */
+  transform: scale(0.9) translateY(50px);
+  transition: all 1.2s ease-out;
+}
+
+.scroll-pop.show {
+  animation: popUp 1.6s ease forwards;
+}
 
 .features-container {
   display: flex;
@@ -130,11 +149,20 @@
         background-color: #23342B;
 
       }
+
+      .gradient-text {
+  font-weight: 700; /* tebal */
+  font-size: 36px; /* ukuran besar */
+  background: linear-gradient(90deg, #f7e85b, #f29f05);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
     </style>
 
   </head>
 
   <body >
+    <canvas id="bg-canvas"></canvas>
     <br>
     <br>
     <br>
@@ -147,11 +175,12 @@
     <br>
 
      <div class="container px-6" id="profil">
+      
                 <div class="row gx-6 align-items-center">
                     <div class="col-lg-6">
                         <!-- Mashead text and app badges-->
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                            <h1 style="font: Helvetica Now; color: #fefbdc;"  >Temukan arah hidupmu lewat decoding jiwa</h1>
+                            <h1 class="gradient-text" style="font: Helvetica Now; color: #fefbdc;"  >Temukan arah hidupmu lewat decoding jiwa</h1>
                             <br>
                             <p style="font-family: 'Helvetica Now', sans-serif;line-height: 30px; color: #fefbdc; font-size: 20px;">Kami bukan guru. Kami bukan peramal. KodeJiwa hadir sebagai teman refleksi—untuk bantu kamu mengenali siapa dirimu, pola hidupmu, dan ke arah mana langkahmu sebenarnya.</p>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
@@ -160,6 +189,9 @@
                         > -->
                         <br>
                         <br>
+                        <br>
+                        <br>
+
                         <span
                           class="btn-3d"onclick="goCreate(this)" data-toggle="modal" data-target="#create-new-modal"
                         >
@@ -188,11 +220,11 @@
 
   </div>
       
-            <div class="row gx-5 justify-content-center" style=" color: #fefbdc">
+            <div class="row gx-5 justify-content-center " style=" color: #fefbdc">
                 <!-- <div class="row gx-5 align-items-center"> -->
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 scroll-pop" >
                         <div class="mb-5 mb-lg-0 text-center text-lg-start" >
-                            <h1 style="font: Helvetica Now; text-align: center; color: #fefbdc;" >Kenali 4 Pilar KodeJiwa</h1>
+                            <h1 class="gradient-text" style="font: Helvetica Now; text-align: center; color: #fefbdc;" >Kenali 4 Pilar KodeJiwa</h1>
                             <br>
                             <h3 style="font: Helvetica Now; font-size: 20px; color: #fefbdc">
 1. Sacred Mapping </h3>
@@ -220,51 +252,51 @@
 
 
 
-<div class="features-container">
+<div class="features-container scroll-pop">
   <div class="feature-box">
     <br>
-    <h5>1. Sacred Mapping (Rp99.000)</h5>
+    <h5 class="gradient-text" style="font-size: 20px;">1. Sacred Mapping (Rp99.000)</h5>
     <p>Langkah pertamamu untuk mengenal diri lebih dalam! Dapatkan gambaran personal tentang aspek diri, sosial, pekerjaan, dan hubungan berdasarkan nama dan tanggal lahirmu.
 </p>
   </div>
   <div class="feature-box">
     <br>
-    <h5>2. ⁠Behavior Analysis (Rp149.000)</h5>
+    <h5 class="gradient-text" style="font-size: 20px;">2. ⁠Behavior Analysis (Rp149.000)</h5>
     <p>Melangkah lebih jauh! Di tahap ini, kita akan menyelami aspek diri, sosial, pekerjaan, dan hubungan melalui analisis perilaku dan kebiasaan sehari-harimu melalui video 30 detik - 1 menit yang akan anda kirimkan!</p>
   </div>
   <div class="feature-box">
     <br>
-    <h5>3. Modern Psychology (Rp249.000)</h5>
+    <h5 class="gradient-text" style="font-size: 20px;">3. Modern Psychology (Rp249.000)</h5>
     <p>Pengalaman lebih intensif dengan sesi one-on-one! Dua kali pertemuan personal untuk mengupas aspek diri, sosial, pekerjaan, dan hubungan secara mendalam.</p>
   </div>
   <div class="feature-box">
     <br>
-    <h5>4. Soul Calling (Rp499.000)</h5>
+    <h5 class="gradient-text" style="font-size: 20px;">4. Soul Calling (Rp499.000)</h5>
     <p>Program transformasi selama satu bulan! Nikmati afirmasi harian dan empat kali sesi coaching one-on-one untuk perubahan yang lebih nyata.</p>
   </div>
 </div>
       <br>
       <br>
 
-      <div class="features-container">
+      <div class="features-container scroll-pop">
   <div class="feature-box">
     <br>
-    <h5>Bundling Eksplorasi Diri Komplit (Rp199.000)</h5>
+    <h5 class="gradient-text" style="font-size: 20px;">Bundling Eksplorasi Diri Komplit (Rp199.000)</h5>
     <p>Sacred Mapping + Behavior Analysis.</p>
   </div>
   <div class="feature-box">
     <br>
-    <h5>Bundling Transformasi Intensif (Rp399.000)</h5>
+    <h5 class="gradient-text" style="font-size: 20px;">Bundling Transformasi Intensif (Rp399.000)</h5>
     <p>Sacred Mapping + Behavior Analysis + Modern Psychology.</p>
   </div>
   <div class="feature-box">
     <br>
-    <h5>Bundling Perjalanan Komprehensif (Rp799.000)</h5>
+    <h5 class="gradient-text" style="font-size: 20px;">Bundling Perjalanan Komprehensif (Rp799.000)</h5>
     <p>Sacred Mapping + Behavior Analysis + Modern Psychology + Soul Calling.</p>
   </div>
   <div class="feature-box">
     <br>
-    <h5>Special Promo!</h5>
+    <h5 class="gradient-text" style="font-size: 20px;">Special Promo!</h5>
     <p>Bundling setelah setiap sesi pertemuan/ menggunakan kode referal via WhatsApp!</p>
   </div>
             
@@ -273,22 +305,22 @@
 <br>
 <br>
 
-<div class="container px-5" id="tentang">
+<div class="container px-5 scroll-pop" id="tentang">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-xl-8">
-                        <h1 style="font: Helvetica Now; text-align: center; color: #fefbdc;">Tentang KodeJiwa</h1>
+                        <h1 class="gradient-text" style="font: Helvetica Now; text-align: center; color: #fefbdc;">Tentang KodeJiwa</h1>
                         <br>
-                        <div style="font: Helvetica Now; text-align: center; font-size: 20px; line-height: 30px; color: #fefbdc;" ><p>Setiap orang punya potensi, tapi kadang kita sulit melihatnya sendiri. Seringkali, kita terjebak dalam pola yang sama atau merasa kosong tanpa tahu apa penyebabnya. KodeJiwa hadir sebagai teman yang percaya bahwa perubahan tidak selalu butuh nasihat besar. Terkadang, cukup dimulai dari obrolan jujur dan memahami diri lebih dalam.</p></div>
+                        <div  style="font: Helvetica Now; text-align: justify; font-size: 20px; line-height: 30px; color: #fefbdc;" ><p>Setiap orang punya potensi, tapi kadang kita sulit melihatnya sendiri. Seringkali, kita terjebak dalam pola yang sama atau merasa kosong tanpa tahu apa penyebabnya. KodeJiwa hadir sebagai teman yang percaya bahwa perubahan tidak selalu butuh nasihat besar. Terkadang, cukup dimulai dari obrolan jujur dan memahami diri lebih dalam.</p></div>
                       <br>
                       <br>
                     </div>
                 </div>
             </div>
         
-    <div class="container px-5" id="ara">
+    <div class="container px-5 scroll-pop" id="ara">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-xl-8">
-                        <h1 style="font: Helvetica Now; text-align: center; color: #fefbdc;">ARA — Awakening Reflection Assistant</h1>
+                        <h1 class="gradient-text" style="font: Helvetica Now; text-align: center; color: #fefbdc;">ARA — Awakening Reflection Assistant</h1>
                         <br>
                     <p style="font: Helvetica Now; text-align: left; font-size: 20px; line-height: 30px; color: #fefbdc;" >- ARA hadir bukan memberi jawaban, tapi membantu kamu melihat yang belum terlihat.</p>
                     <p style="font: Helvetica Now; text-align: left; font-size: 20px; line-height: 30px; color: #fefbdc;" >- ARA bantu kamu mengenali arah hidup dari cermin yang jujur diri sendiri.</p>
@@ -321,7 +353,95 @@
       <br>
     
   </body>
+  <script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show'); // tambahkan class show saat masuk viewport
+      observer.unobserve(entry.target); // agar animasi sekali saja
+    }
+  });
+}, {
+  threshold: 0.1 // animasi mulai saat 10% div terlihat
+});
 
+// Target semua div yang mau animasi
+document.querySelectorAll('.scroll-pop').forEach(el => observer.observe(el));
+</script>
+<script>
+const canvas = document.getElementById('bg-canvas');
+const ctx = canvas.getContext('2d');
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas();
+
+// Bintang dengan posisi & opacity random + kecepatan gerak random
+const starCount = 200;
+const stars = [];
+for (let i = 0; i < starCount; i++) {
+  stars.push({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    radius: Math.random() * 1.5 + 0.5,
+    opacity: Math.random(),
+    deltaOpacity: (Math.random() * 0.02) + 0.010, // kecepatan blink
+    deltaX: (Math.random() - 0.5) * 0.2,           // gerak horizontal pelan
+    deltaY: (Math.random() - 0.5) * 0.2            // gerak vertikal pelan
+  });
+}
+
+function draw() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  // Background gelap
+  ctx.fillStyle = "#1c2e20";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  // Gambar & update bintang
+  stars.forEach(star => {
+    // Gambar bintang
+    ctx.beginPath();
+    ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(255, 255, 255, ${star.opacity})`;
+    ctx.fill();
+
+    // Update opacity (blink)
+    star.opacity += star.deltaOpacity;
+    if (star.opacity >= 1 || star.opacity <= 0) {
+      star.deltaOpacity = -star.deltaOpacity;
+    }
+
+    // Update posisi (floating)
+    star.x += star.deltaX;
+    star.y += star.deltaY;
+
+    // Loop posisi jika keluar canvas
+    if (star.x < 0) star.x = canvas.width;
+    if (star.x > canvas.width) star.x = 0;
+    if (star.y < 0) star.y = canvas.height;
+    if (star.y > canvas.height) star.y = 0;
+  });
+
+  requestAnimationFrame(draw);
+}
+draw();
+</script>
+
+<style>
+#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* canvas di bawah konten HTML */
+  display: block;
+}
+</style>
 
 
 @include('layouts.footerlanding')

@@ -638,7 +638,7 @@ progress {
  
   margin-right: auto;
   margin-left: auto;
-  background-color: #23342B;
+  /* background-color: #23342B; */
 }
 
 @media (min-width: 576px) {
