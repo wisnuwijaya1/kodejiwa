@@ -129,6 +129,7 @@
 <br>
 <br>
 <br>
+<canvas id="bg-canvas"></canvas>
 <div class="row">
 	<div class="col-md-14">
 		
@@ -158,7 +159,7 @@
 					<tr>
 						
 						<th ><label for="message"  style="color: #fefbdc;">Hasil Test:</label><br>
-						<textarea id="message" name="message" rows="14" cols="170"  style="color: #fefbdc; background-color: #23342B; font-size: 20px" disabled>
+						<textarea id="message" name="message" rows="14" cols="170"  style="color: #fefbdc; background-color: transparent; font-size: 20px" disabled>
 							<?php  if (isset($jawaban)) {
     print $jawaban;
 } else {
@@ -190,7 +191,80 @@
 </div> -->
 </div>
 </div>
+<script>
+const canvas = document.getElementById('bg-canvas');
+const ctx = canvas.getContext('2d');
 
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas();
+
+// Bintang dengan posisi & opacity random + kecepatan gerak random
+const starCount = 200;
+const stars = [];
+for (let i = 0; i < starCount; i++) {
+  stars.push({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    radius: Math.random() * 1.5 + 0.5,
+    opacity: Math.random(),
+    deltaOpacity: (Math.random() * 0.02) + 0.010, // kecepatan blink
+    deltaX: (Math.random() - 0.5) * 0.2,           // gerak horizontal pelan
+    deltaY: (Math.random() - 0.5) * 0.2            // gerak vertikal pelan
+  });
+}
+
+function draw() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  // Background gelap
+  ctx.fillStyle = "#1c2e20";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  // Gambar & update bintang
+  stars.forEach(star => {
+    // Gambar bintang
+    ctx.beginPath();
+    ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(255, 255, 255, ${star.opacity})`;
+    ctx.fill();
+
+    // Update opacity (blink)
+    star.opacity += star.deltaOpacity;
+    if (star.opacity >= 1 || star.opacity <= 0) {
+      star.deltaOpacity = -star.deltaOpacity;
+    }
+
+    // Update posisi (floating)
+    star.x += star.deltaX;
+    star.y += star.deltaY;
+
+    // Loop posisi jika keluar canvas
+    if (star.x < 0) star.x = canvas.width;
+    if (star.x > canvas.width) star.x = 0;
+    if (star.y < 0) star.y = canvas.height;
+    if (star.y > canvas.height) star.y = 0;
+  });
+
+  requestAnimationFrame(draw);
+}
+draw();
+</script>
+
+<style>
+#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* canvas di bawah konten HTML */
+  display: block;
+}
+</style>
 @include('layouts.footerlanding')
 <script>
 document.getElementById("btnwa").addEventListener("click", function () {
